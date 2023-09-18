@@ -1,0 +1,30 @@
+
+a.sticky-foot:link {color: var(--contrast-green); background-color: transparent; text-decoration: none; cursor:pointer;}
+a.sticky-foot:visited {color: var(--contrast-green); background-color: transparent; text-decoration: none; cursor:pointer;}
+a.sticky-foot:active {color: var(--contrast-red); background-color: transparent; text-decoration: none; cursor:pointer;}
+
+.sticky-footer-position {position: fixed; right: 3rem; bottom: 30px; background-color: transparent;}
+.accessibility-layer {border: 0px solid black; border-radius: 15px; padding: 2px 0 1px 0; background-color: white; width: 75px; height: 75px;}
+.sticky-scroll-button {width: 72px; text-align: center; margin: 0 auto; padding: 0;}
+.sticky-foot-icon {font-size: 72px}
+
+@media screen and (max-width: 900px) {
+    .sticky-footer-position {
+      position: fixed; right: 10px; bottom: 10px; background-color: transparent;
+}
+
+.accessibility-layer {border: 0px solid black; border-radius: 15px; padding: 0 0 0 0; text-align: center; margin:0 auto; background-color: white; width: 54px; height: 54px;}
+.sticky-scroll-button {width: 50px; text-align: center; margin: 0 auto; padding: 2px 1px 1px 1px;}
+.sticky-foot-icon {font-size: 50px}
+
+}
+
+@media (hover: hover) {
+    a.sticky-foot:hover {color: var(--contrast-blue); text-decoration: none; cursor:pointer;}
+    a.sticky-foot:active {color: var(--contrast-red); text-decoration: none; cursor:pointer;}
+}
+
+a.sticky-foot:active::after {
+    document.getElementById("myHeader").focus();
+}
+

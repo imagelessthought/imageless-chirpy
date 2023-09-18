@@ -1,0 +1,7 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="256px" height="256px" viewBox="-0.85 -0.85 18.70 18.70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" stroke="#ffffff" stroke-width="1.411">
+<g id="bgCarrier" stroke-width="0"/>
+<g id="tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.23800000000000004"/>
+<g id="iconCarrier"> <path d="M10.027 10.074v-10.074h-6.054v10.077l3.021-2.053 3.033 2.050zM4.973 8.188v-7.188h4.055v7.191l-2.037-1.376-2.018 1.373zM16 1.007v14.993h-15v-14.993h1.974v1h-0.974v12.993h13v-12.993h-4.005v-1h5.005z" fill="#ffffff"/> </g>
+</svg>

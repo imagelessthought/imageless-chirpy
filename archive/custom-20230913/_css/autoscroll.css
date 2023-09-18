@@ -1,0 +1,18 @@
+
+@media screen and (min-width: 451px) {
+  html {
+    scroll-padding-top: 240px; /* Adjust scroll adjustment correction */
+  }
+}
+
+@media screen and (min-width: 1920px) {
+    html {
+      scroll-padding-top: 95px; /* Adjust scroll adjustment correction */
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+      scroll-padding-top: 95px; /* Adjust scroll adjustment correction */
+    }
+}

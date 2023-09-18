@@ -1,0 +1,165 @@
+#my-left-nav a {transition: 0.3s; outline: 1px solid black; border: 2px solid var(--d2green); border-radius: 0 30px 30px 0; background-color: rgba(0, 0, 0, 0.7); z-index: 1;}
+#my-left-nav a:hover {left: -2px; color: white; background: #00853e;}
+.left-tab1 {position: absolute; left: -6em; top: 10em; width: 11em; height: 4em; text-align: center; text-decoration: none; font-weight: 600;}
+.left-tab2 {position: absolute; left: -6em; top: 14.5em; width: 11em; height: 4em; text-align: center; text-decoration: none; font-weight: 600;}
+.left-tab3 {position: absolute; left: -6em; top: 19em; width: 11em; height: 4em; text-align: center; text-decoration: none; font-weight: 600;}
+.left-tab4 {position: absolute; left: -6em; top: 23.5em; width: 11em; height: 4em; text-align: center; text-decoration: none; font-weight: 600;}
+.left-tab5 {position: absolute; left: -6em; top: 28em; width: 11em; height: 4em; text-align: center; text-decoration: none; font-weight: 600;}
+.left-tab6 {position: absolute; left: -6em; top: 32.5em; width: 11em; height: 4em; text-align: center; text-decoration: none; font-weight: 600;}
+.left-tab7 {position: absolute; left: -6em; top: 37em; width: 11em; height: 4em; text-align: center; text-decoration: none; font-weight: 600;}
+.left-tab8 {position: absolute; left: -6em; top: 41.5em; width: 11em; height: 4em; text-align: center; text-decoration: none; font-weight: 600;}
+.left-tab9 {position: absolute; left: -6em; top: 46em; width: 11em; height: 4em; text-align: center; text-decoration: none; font-weight: 600;}
+
+.hero-tab-container {
+   position: absolute;
+   right: .4rem;
+   top: 10em;
+}
+
+.hero-tab {
+  position: relative;
+  padding: .5rem 1rem 1rem 1rem;
+  border: 1px solid var(--dgreen);
+  background-color: rgba(0, 0, 0, 0.7); 
+  z-index: 1;
+  border-radius: .25rem;
+}
+
+.hero-tab h2 {
+  font-size: 2rem;
+  text-align: left;
+  padding: 0;
+  margin: .25rem 0;
+  color: var(--fontlight);
+}
+
+.hero-tab hr {
+  width: 98%;
+  height: 2px;
+  border: 1px solid var(--lgreen);
+  color: var(--lgreen);
+  background-color: var(--lgreen);
+  border-radius: 1rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.hero-tab button {
+  border: 1px solid var(--d2green);
+  border-radius: .25rem;
+  padding: .5rem 0;
+  color: white;
+  width: 50%;
+  height: auto;
+  background-color: var(--dgreen);
+  margin: .5rem auto;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-tab button:hover {
+  background-color: var(--d2green);
+  color: white;
+}
+
+.badge {
+    width: 3em;
+    height: 3em;
+    display: block;
+    left: .7em;
+    margin: .35em 0 0 .5em;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 3em 3em;
+    background-color: white;
+    border-radius: 10%;
+    border-color: #D6DBDF;
+    border-style: solid;
+    border-width: 0px;
+   
+  }
+
+.badge-left {
+    width: 3em;
+    height: 3em;
+    display: block;
+    left: 6.5em;
+    bottom: .4rem;
+    margin: 0;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 3em 3em;
+    background-color: white;
+    border-radius: 10%;
+    border-color: #D6DBDF;
+    border-style: solid;
+    border-width: 0px;
+   
+  }
+
+a.side {background-color: #00853e; opacity: 1;}
+
+.main-hero-image-container {
+   z-index: 0;
+}
+
+.main-hero-image {
+   width: 100%;
+   height: 600px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   margin: 0;
+   transition: 0.6s ease;
+}
+
+@media screen and (max-width: 1920px) {
+   .hero-background-container {
+      display: flex;
+      justify-content: center;
+   }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 900px) {
+   .alt-page-container {
+      padding: 10px 20px;
+   }
+
+#my-left-nav a {transition: 0.3s; border: 2px solid #00853e; border-radius: 0 30px 30px 0; background-color: rgba(0, 0, 0, 0.7); z-index: 1;}
+#my-left-nav a:hover {left: -2px; color: white; background: #00853e;}
+.left-tab1 {position: absolute; left: -6em; top: 6.8em; width: 11em; height: 4em; text-align: center; text-decoration: none; font-weight: 600;}
+.left-tab2 {position: absolute; left: -6em; top: 11.3em; width: 11em; height: 4em; text-align: center; text-decoration: none; font-weight: 600;}
+.left-tab3 {position: absolute; left: -6em; top: 15.8em; width: 11em; height: 4em; text-align: center; text-decoration: none; font-weight: 600;}
+.left-tab4 {position: absolute; left: -6em; top: 20.3em; width: 11em; height: 4em; text-align: center; text-decoration: none; font-weight: 600;}
+.left-tab5 {position: absolute; left: -6em; top: 24.8em; width: 11em; height: 4em; text-align: center; text-decoration: none; font-weight: 600;}
+.left-tab6 {position: absolute; left: -6em; top: 29.3em; width: 11em; height: 4em; text-align: center; text-decoration: none; font-weight: 600;}
+.left-tab7 {position: absolute; left: -6em; top: 33.8em; width: 11em; height: 4em; text-align: center; text-decoration: none; font-weight: 600;}
+
+#hero-nav a {transition: 0.3s; border: 2px solid #00853e; border-radius: .5em; background-color: rgba(0, 0, 0, 0.7); z-index: 1;}
+#hero-nav a:hover {right: 12em; color: white; background: #00853e;}
+.hero-nav-tab1 {position: absolute; top: 10em; width: 10em; height: 10em; text-align: left; text-decoration: none;}
+
+}
+
+@media screen and (max-width: 450px) {
+
+}
+
+@media screen and (max-width: 1367px) {
+
+}
+
+/* hero: end */

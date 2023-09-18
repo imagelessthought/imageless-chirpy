@@ -1,0 +1,219 @@
+
+@media screen and (min-width: 901px) {
+    .mobile-menu-button {
+      display: none;
+    }
+    .scrolled .mobile-hide {
+      display: block;
+    }
+
+    .scrolled .dropdown-column {
+      display: flex;
+    }
+}
+
+@media screen and (min-width: 1460px) {
+    .nav-container {
+        width: 80%;
+        padding-left: 7.5rem;
+    }
+    .scrolled-show .nav-container {
+        width: 80%;
+        padding-left: 8.5rem;
+        justify-content: flex-start;
+    }
+}
+  
+@media screen and (max-width: 1460px) {
+    .header-flex {
+        width: 95%;
+    }
+
+    .search-button-scrolled {
+        margin-right: 10%;
+    }
+
+    .header-pic {
+        width: 6rem;
+    }
+
+    .nav-container {
+        padding-left: 8rem;
+        margin: 0;
+    }
+    .scrolled-show .nav-container {
+        width: 95%;
+        padding-left: 5.5rem;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    
+    h1 {
+    font-size: 1.3rem!important;
+    }
+    
+    h4 {
+    font-size: 1rem;
+    }
+
+    .dropdown-list-content {
+        width: 100%;
+    }
+
+    .topnav {
+        display: none;
+    }
+
+    .topnav.responsive {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .preserve-dom {
+        height: 6rem;
+    }
+
+    .topnav.responsive {
+        display: block;
+        background-color: #181818;
+        overflow: unset;
+    }
+    .responsive .nav-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+        padding: .75rem 0;
+        background-color: #181818;
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        z-index: 4;
+    }
+
+    .dropdown-columns {
+        gap: 0 .25rem;
+    }
+
+    .dropdown-column {
+        width: 100%;
+    }
+
+   .dropdown-btn {
+        margin: 0;
+    }
+
+   .nav-button {
+        margin-bottom: .75rem;
+    } 
+
+    .topnav.responsive .nav-button,
+    .topnav.responsive .dropdown-btn {
+        display: block;
+    }
+
+    .topnav.responsive .nav-button {
+        display: block;
+    }
+    .responsive .nav-container::before {
+        content: '';
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #181818;
+        z-index: -1;
+    }
+
+    .responsive div.dropdown-content,
+    .responsive .dropdown-btn:hover+div.dropdown-content {
+        position: relative;
+        top: unset;
+        left: unset;
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: .5rem;
+    }
+
+    .mobile-hide {
+        display: none;
+    }    
+
+/* DUPED 
+   .header-pic-container {  
+        padding-bottom: 1rem;
+        padding-right: 0.5rem;
+    } 
+
+*/
+    .mobile-menu-button {
+        font-size: 3rem;
+        padding-top: 0.675rem;
+    }
+
+    .college-title {
+        font-size: 1.1rem!important;
+        margin-left: .25rem;
+
+    }
+
+    .dept-title {
+        font-size: 1.2rem!important;
+        margin-left: .25rem;
+    }
+
+
+    a.redstyle {
+        font-size: 1rem;
+    }
+
+    .hider {
+        height: 7px; background-color: black; color: black;
+    }
+
+    .scrolled .search-button-scrolled,
+    .scrolled .quick-links-scrolled,
+    .scrolled .menu-button-scrolled {
+        display: none;
+    }
+
+    /* hide only the first dropdown column in .dropdown-content in responsive mode */
+    .dropdown-image-context {
+        display: none;
+    }
+
+    .header-pic {
+        width: 4.25rem;
+        display: none;
+    }
+
+    .header-pic-container {   /* MB added to push log up to be aligned with with menu bar */
+        padding-bottom: .8rem;
+        padding-right: 0.25rem;
+    } 
+
+    .header-flex {
+        gap: 0.5rem .35rem; /* MB: added spacing between logo and title */
+    }
+
+    .mobile-menu-button {
+        font-size: 3rem;
+        padding-top: 0.675rem;
+    }
+
+    .mobile-margin-bottom-fix {
+        margin-bottom: .5rem;
+    }
+
+    .scrolled .heading-title {
+        flex-direction: column;
+        justify-content: center;
+        font-size: 14px;
+        align-items: flex-start;
+    }
+
+}

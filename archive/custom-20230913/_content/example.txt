@@ -1,0 +1,31 @@
+<main id="main-content">
+<div class="main">
+<section id="introduction">
+<div class="section">
+<h1></h1>
+<h2></h2>
+
+<div class="flex-container">
+<div class="flex-item">
+<img class="whitebg" src="" alt="">
+<hr>
+<figcaption></figcaption>
+</div>
+
+<div class="flex-item">
+<img class="whitebg" src="_images/_help_tutorials/adobe-2company.png" alt="">
+<hr>
+<figcaption></figcaption>
+</div>
+
+<div class="flex-item">
+<img class="whitebg" src="" alt="">
+<hr>
+<figcaption></figcaption>
+</div>
+</div>
+
+
+
+<div class="cool-box cool-button-link"><a id="" class="link-button1-url" href="" alt=""></a></div>
+

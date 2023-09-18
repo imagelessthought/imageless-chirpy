@@ -1,0 +1,4 @@
+<script>
+  $("head").append("<title>College of Visual Arts and Design | Information Technology Services</title>");
+  $("head").append("<link rel='icon' type='image/x-icon' href='_images/_archive_favicons/favicon.ico'>"); 
+</script>

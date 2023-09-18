@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<meta name="description" content="Support Documentation for the College of Visual Arts and Design at the University of North Texas">
+<meta name="keywords" content="IT,HELP,SUPPORT,ART,CVAD,UNT">
+<meta name="author" content="cvad students and staff">
+<!-- Style -->
+<style> 
+.screenreader-text {position:absolute; left:-999px; width:1px; height:1px; top:auto;}
+.screenreader-text:focus {color:black; display:inline-block; height:auto; width:auto; position:static; margin:auto;}
+</style>
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>    
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="_scripts/head-elements.js"></script>
+<script>  // Uses jquery-3.3.1.js
+$(document).ready(function(){
+   $('#header').load("_snippets/body-01-header.html");
+   $('#page').load("_content/style-sheet.html");
+   $('#footer').load("_snippets/body-02-footer.html");
+});
+</script>
+<head>
+<body>
+<div id="header"></div>
+<div id="page"></div>
+<div id="footer"></div>
+</body>
+</html>
