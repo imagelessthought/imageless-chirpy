@@ -67,6 +67,11 @@
           {%- capture url -%}
             https://{{ entry.type }}.com/{{ site[entry.type].username }}
           {%- endcapture -%}
+          {% when 'github' %}
+          {%- capture url -%}
+            https://{{ entry.type }}.com/{{ site[entry.type].username }}
+          {%- endcapture -%}
+          
         {% when 'email' %}
           {% assign email = site.social.email | split: '@' %}
           {%- capture url -%}
