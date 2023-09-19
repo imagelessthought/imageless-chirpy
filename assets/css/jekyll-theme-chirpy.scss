@@ -19,20 +19,19 @@ html {
 b, strong {
     color: var(--site-title-color);
 }
---sidebar-bg
-/* append your custom style below */
+
 .iul {
-    padding: .1rem .4rem!important;
-    width: fit-content!important;
-    border: 1px solid var(--search-icon-color)important;
+    width: fit-content;
+    border: 1px solid var(--sidebar-bg);
     outline: none;
     background: var(--card-bg);
     border-radius: 5px;
-    padding: .25rem .5rem!important;
+    padding: .25rem .5rem .4rem .5rem;
   }
   
   .iul:hover {
-    background-color: var(--sidebar-bg)!important;
+    background-color: var(--sidebar-bg);
+    color: var(--site-title-color)!important;
   }
 
   .iul::before {
@@ -208,7 +207,7 @@ b, strong {
 
     .rsidebar-links a {
     display: block;
-    font-size: 1rem;
+    font-size: .8rem;
     text-decoration: none!important;
     text-align: left!important;
     border-top: .5px solid var(--main-bg)!important;

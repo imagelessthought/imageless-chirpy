@@ -158,7 +158,8 @@ h1 + .post-meta {
     &:hover {
       @extend %link-hover;
       @extend %tag-hover;
-      @extend %no-bottom-border;
+   /*  @extend %no-bottom-border;  */
+      background-color: black!important;
     }
   }
 }

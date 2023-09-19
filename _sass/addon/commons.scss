@@ -517,6 +517,10 @@ main {
   }
 }
 
+.post-tag:hover {
+  color: white!important;
+}
+
 .rounded-10 {
   border-radius: 10px !important;
 }
@@ -1073,13 +1077,11 @@ search {
     border: none;
     padding: 0.5rem;
     margin: 0 1.25rem 1rem 0;
-
-    &::before {
+     &::before {
       content: '#';
       color: var(--text-muted-color);
       padding-right: 0.2rem;
     }
-
     @extend %link-color;
   }
 }

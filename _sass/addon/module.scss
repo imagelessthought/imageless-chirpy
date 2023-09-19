@@ -55,8 +55,8 @@
 }
 
 %link-hover {
-  color: rgb(138, 180, 248) !important;
-  border-bottom: 0px solid #d2603a;
+  color: rgb(138, 180, 248); 
+/*  border-bottom: 0px solid #d2603a; */
   text-decoration: none;
 }
 
@@ -65,7 +65,7 @@
 }
 
 %link-underline {
-  border-bottom: 0px solid var(--link-underline-color);
+/*  border-bottom: 0px solid var(--link-underline-color); */
 }
 
 %clickable-transition {
