@@ -18,8 +18,6 @@
 <!-- `site.alt_lang` can specify a language different from the UI -->
 <html lang="en" 
   
-    data-mode="dark"
-  
 >
   <!-- The Head -->
 
@@ -48,11 +46,11 @@
 <meta property="og:url" content="http://localhost:4000/tabs/links.html" />
 <meta property="og:site_name" content="Imageless Thought" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-09-19T06:30:28-05:00" />
+<meta property="article:published_time" content="2023-09-20T16:33:03-05:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Links" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-19T06:30:28-05:00","datePublished":"2023-09-19T06:30:28-05:00","description":"Information Security SANS Institute CIS: Center for Internet Security NIST: National Institute of Standards and Technology Cybersecurity and Infrastructure Security Agency Open Worldwide Application Security Project TXDIR: Texas Department of Information Resources Cloud Computing Platforms Amazon Web Services Google Cloud Services Microsoft Azure IBM Cloud Computing Development CSSDeck: CSS and JS Collection Dabblet: Interactive CSS Playground and Code Sharing Electron Fiddle: Electron Dev Environment Electron Forge: Electron Package and Distribution Electronjs: OpenJS Foundation Software Framework ESNextbin: Prototype JavaScript Apps in Browser Figma: Collaborative Web Design Glitch: Application Dev Tools ICEcoder: Browser Code Editor JS Bin: Collaborative JavaScript Debugging JSFiddle: Online IDE Jsitor: JavaScript, CSS, HTML Sandbox Liveweave: HTML, CSS &amp; JavaScript Real-Time Editor MUI: React Component Library Netlify: Modern Web Development Platform Playcode: Javascript Sandbox Plunker: Prototyping Tool Rollbar: Error Tracking &amp; Debugging Tools Builder.io: Visual Headless CMS Bun: A fast all-in-one JavaScript runtime Svelte: Cybernetically enhanced web apps Skeleton: UI Toolkit for Svelte + Tailwind StackBlitz: Instant Dev Environments Budibase: Open source Low-code Platform CircleCI: CI/CD platform Airtable: Application Dev Environment Code Hike: Syntax Highlighter codeanywhere: Cloud IDE Services social.lfx.dev(Mastodon): Decentralized Social Network InVision: Whiteboard Discord: Instant Messaging and VoIP Social Platform Linux Debian Linux Ubuntu Linux RedHat Linux Raspberry Pi Foundation Git Version Control Git (Software Freedom Conservancy) Github GitLab Bitbucket (Atlassian) Gogs: Self-hosted Git service Server and Applications Docker Docker Hub: Container Image Library Kubernetes Packager.io: RPM Packager Training and Tutorials Codeamigo: AI-Powered Coding Tutorials Free CodeCamp: Free Coding Tutorials SitePoint: Learn Web and Responsive Design GeeksforGeeks: Computer Science Portal Artifical Intelligence OpenAI Google AI Microsoft Azure AI IBM watsonX National AI Initiative Amazon AI: Free Services Information Technology News MIT Technology Review: AI NVIDIA AI and Data Science UNESCO AI: Open Access Journal TechCrunch: AI VentureBeat: AI Gartner AI Apple AI DeepLearning: AI","headline":"Links","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/tabs/links.html"},"url":"http://localhost:4000/tabs/links.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-20T16:33:03-05:00","datePublished":"2023-09-20T16:33:03-05:00","description":"Information Security SANS Institute CIS: Center for Internet Security NIST: National Institute of Standards and Technology Cybersecurity and Infrastructure Security Agency Open Worldwide Application Security Project TXDIR: Texas Department of Information Resources Cloud Computing Platforms Amazon Web Services Google Cloud Services Microsoft Azure IBM Cloud Computing Development CSSDeck: CSS and JS Collection Dabblet: Interactive CSS Playground and Code Sharing Electron Fiddle: Electron Dev Environment Electron Forge: Electron Package and Distribution Electronjs: OpenJS Foundation Software Framework ESNextbin: Prototype JavaScript Apps in Browser Figma: Collaborative Web Design Glitch: Application Dev Tools ICEcoder: Browser Code Editor JS Bin: Collaborative JavaScript Debugging JSFiddle: Online IDE Jsitor: JavaScript, CSS, HTML Sandbox Liveweave: HTML, CSS &amp; JavaScript Real-Time Editor MUI: React Component Library Netlify: Modern Web Development Platform Playcode: Javascript Sandbox Plunker: Prototyping Tool Rollbar: Error Tracking &amp; Debugging Tools Builder.io: Visual Headless CMS Bun: A fast all-in-one JavaScript runtime Svelte: Cybernetically enhanced web apps Skeleton: UI Toolkit for Svelte + Tailwind StackBlitz: Instant Dev Environments Budibase: Open source Low-code Platform CircleCI: CI/CD platform Airtable: Application Dev Environment Code Hike: Syntax Highlighter codeanywhere: Cloud IDE Services social.lfx.dev(Mastodon): Decentralized Social Network InVision: Whiteboard Discord: Instant Messaging and VoIP Social Platform Linux Debian Linux Ubuntu Linux RedHat Linux Raspberry Pi Foundation Git Version Control Git (Software Freedom Conservancy) Github GitLab Bitbucket (Atlassian) Gogs: Self-hosted Git service Server and Applications Docker Docker Hub: Container Image Library Kubernetes Packager.io: RPM Packager Training and Tutorials Codeamigo: AI-Powered Coding Tutorials Free CodeCamp: Free Coding Tutorials SitePoint: Learn Web and Responsive Design GeeksforGeeks: Computer Science Portal Artifical Intelligence OpenAI Google AI Microsoft Azure AI IBM watsonX National AI Initiative Amazon AI: Free Services Information Technology News MIT Technology Review: AI NVIDIA AI and Data Science UNESCO AI: Open Access Journal TechCrunch: AI VentureBeat: AI Gartner AI Apple AI DeepLearning: AI","headline":"Links","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/tabs/links.html"},"url":"http://localhost:4000/tabs/links.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -116,6 +114,151 @@
   
 
   <!-- JavaScript -->
+
+  
+    <!-- Switch the mode between dark and light. -->
+
+<script type="text/javascript">
+  class ModeToggle {
+    static get MODE_KEY() {
+      return 'mode';
+    }
+    static get MODE_ATTR() {
+      return 'data-mode';
+    }
+    static get DARK_MODE() {
+      return 'dark';
+    }
+    static get LIGHT_MODE() {
+      return 'light';
+    }
+    static get ID() {
+      return 'mode-toggle';
+    }
+
+    constructor() {
+      if (this.hasMode) {
+        if (this.isDarkMode) {
+          if (!this.isSysDarkPrefer) {
+            this.setDark();
+          }
+        } else {
+          if (this.isSysDarkPrefer) {
+            this.setLight();
+          }
+        }
+      }
+
+      let self = this;
+
+      /* always follow the system prefers */
+      this.sysDarkPrefers.addEventListener('change', () => {
+        if (self.hasMode) {
+          if (self.isDarkMode) {
+            if (!self.isSysDarkPrefer) {
+              self.setDark();
+            }
+          } else {
+            if (self.isSysDarkPrefer) {
+              self.setLight();
+            }
+          }
+
+          self.clearMode();
+        }
+
+        self.notify();
+      });
+    } /* constructor() */
+
+    get sysDarkPrefers() {
+      return window.matchMedia('(prefers-color-scheme: dark)');
+    }
+
+    get isSysDarkPrefer() {
+      return this.sysDarkPrefers.matches;
+    }
+
+    get isDarkMode() {
+      return this.mode === ModeToggle.DARK_MODE;
+    }
+
+    get isLightMode() {
+      return this.mode === ModeToggle.LIGHT_MODE;
+    }
+
+    get hasMode() {
+      return this.mode != null;
+    }
+
+    get mode() {
+      return sessionStorage.getItem(ModeToggle.MODE_KEY);
+    }
+
+    /* get the current mode on screen */
+    get modeStatus() {
+      if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) {
+        return ModeToggle.DARK_MODE;
+      } else {
+        return ModeToggle.LIGHT_MODE;
+      }
+    }
+
+    setDark() {
+      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.DARK_MODE);
+      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
+    }
+
+    setLight() {
+      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE);
+      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
+    }
+
+    clearMode() {
+      document.documentElement.removeAttribute(ModeToggle.MODE_ATTR);
+      sessionStorage.removeItem(ModeToggle.MODE_KEY);
+    }
+
+    /* Notify another plugins that the theme mode has changed */
+    notify() {
+      window.postMessage(
+        {
+          direction: ModeToggle.ID,
+          message: this.modeStatus
+        },
+        '*'
+      );
+    }
+
+    flipMode() {
+      if (this.hasMode) {
+        if (this.isSysDarkPrefer) {
+          if (this.isLightMode) {
+            this.clearMode();
+          } else {
+            this.setLight();
+          }
+        } else {
+          if (this.isDarkMode) {
+            this.clearMode();
+          } else {
+            this.setDark();
+          }
+        }
+      } else {
+        if (this.isSysDarkPrefer) {
+          this.setLight();
+        } else {
+          this.setDark();
+        }
+      }
+
+      this.notify();
+    } /* flipMode() */
+  } /* ModeToggle */
+
+  const modeToggle = new ModeToggle();
+</script>
 
   
 
@@ -238,7 +381,17 @@
   </nav>
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
-    
+      
+    <button type="button" class="mode-toggle btn" aria-label="Switch Mode">
+        <i class="fas fa-adjust"></i>
+      </button>
+      
+      <span>&nbsp;&nbsp;</span><span class="icon-border"></span><span>&nbsp;&nbsp;</span>
+
+      
+      </a>
+
+      
 
     
       
@@ -593,8 +746,12 @@
 
           <!-- panel -->
           <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 text-muted">
+            <div><div class="rounded-logo" style="margin: 3rem auto 3rem auto; text-align: center; display: flex; justify-content: center; align-items: center;">
+<a href="/posts/Universal-Digital-Signage/" alt="IT" title="No Project Assigned"><img style="width: 75px; height: auto" src="/assets/images/website/creative_idea_solution-greenwhite.png"></a>
+</div></div>
 
             <div class="access">
+
               <!-- Get the last 5 posts from lastmod list. -->
 
 
@@ -1073,9 +1230,8 @@
 
 
             </div>
-
             
-          </aside>
+           </aside>
 
         </div>
 

@@ -27,7 +27,21 @@ html {
 
   font-size: 16px;
 }
+.rounded-logo {
+  background-color: var(--mask-bg)!important;
+  border: 0px solid #C2185B!important;
+  outline: none;
+  border-radius: 50%!important;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 0rem;
+  box-shadow: (0 0 10px 10px) var(--sidebar-active-color);
+  }
 
+  .rounded-logo:hover {
+    transform: scale(1.5);
+  }
 body {
   background: var(--main-bg);
   padding: env(safe-area-inset-top) env(safe-area-inset-right)
@@ -210,8 +224,8 @@ i {
 .access {
   top: 2rem;
   transition: top 0.2s ease-in-out;
-  margin-top: 3rem;
-  margin-bottom: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 
   &:only-child {
     position: -webkit-sticky;
@@ -752,7 +766,7 @@ $btn-mb: 0.5rem;
       background-color: inherit;
 
       &:hover {
-        transform: scale(1.5);
+        transform: scale(1.15);
       }
     }
   }

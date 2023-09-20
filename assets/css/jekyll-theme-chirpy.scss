@@ -53,6 +53,26 @@ b, strong {
     margin-right: .5rem;
   }
 
+  .iul-nb {
+    width: fit-content;
+    border: 1px solid var(--link-color);
+    outline: none;
+    background: var(--card-bg);
+    border-radius: 5px;
+    padding: .1rem .25rem;
+    margin: 0;
+    text-align: left;
+    font-size: 1rem;
+    display: inline-block;
+    color: var(--site-title-color);
+  }
+  
+/*
+  .iul-nb:hover {
+    background-color: var(--sidebar-bg);
+    color: var(--site-title-color)!important;
+  }
+*/
   .portfolio {
     display: flex;
     justify-content: center;
