@@ -41,6 +41,7 @@ html {
 
   .rounded-logo:hover {
     transform: scale(1.5);
+    transition: transform 0.75s;
   }
 body {
   background: var(--main-bg);
