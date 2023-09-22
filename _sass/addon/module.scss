@@ -44,7 +44,6 @@
 }
 
 %tag-hover {
-  background: var(--tag-hover);
   transition: background 0.35s ease-in-out;
 }
 
@@ -65,7 +64,7 @@
 }
 
 %link-underline {
-/*  border-bottom: 0px solid var(--link-underline-color); */
+ border-bottom: 0px solid transparent; 
 }
 
 %clickable-transition {

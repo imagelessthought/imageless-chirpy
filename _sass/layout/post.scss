@@ -64,7 +64,7 @@ h1 + .post-meta {
 }
 
 .post-tail-wrapper {
-  margin-top: 6rem;
+  margin-top: 2rem;
   border-bottom: 1px double var(--main-border-color);
   font-size: 0.85rem;
 
@@ -159,7 +159,6 @@ h1 + .post-meta {
       @extend %link-hover;
       @extend %tag-hover;
    /*  @extend %no-bottom-border;  */
-      background-color: black!important;
     }
   }
 }

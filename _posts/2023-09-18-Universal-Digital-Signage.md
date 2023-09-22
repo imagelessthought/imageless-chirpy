@@ -27,18 +27,3 @@ This time around we will be adding some new features:
 
 [Project Documentation](/signage/ 'ITG: Universal Digital Signage'){: .iul}
 is availabe online as are our starting templates.
-
-<!--
-[ChatGPT](https://lablab.ai/t/chatgpt-guide 'OpenAI: ChatGPT'){: .iul}
-&nbsp;&nbsp;&nbsp;An AI-powered language model developed by OpenAI, capable of generating human-like text based on context and past conversations.
-
-[Google Bard](https://bard.google.com 'Google-Bard'){: .iul}
-&nbsp;&nbsp;&nbsp;A conversational generative artificial intelligence chatbot developed by Google, based initially on the LaMDA family of large language models and later the PaLM LLM.
-
-[Microsoft AI](https://www.microsoft.com/en-us/ai 'Microsoft AI'){: .iul}
-&nbsp;&nbsp;&nbsp;This page provides you with useful background on Microsoft AI, their approach, newest tools and features, the latest news and more.
-
-[Meta AI](https://ai.meta.com/ 'Meta AI'){: .iul}
-&nbsp;&nbsp;&nbsp;Meta AI is an academic research laboratory focused on generating knowledge for the AI community.  Meta AI intends to develop various forms of artificial intelligence, improving augmented and artificial reality technologies.
-
--->

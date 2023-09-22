@@ -8,19 +8,15 @@
   margin-right: 0.8rem;
   line-height: 3rem;
   letter-spacing: 0;
-  color: var(--heading-color);
-  background-color: var(--sidebar-bg);
-  border: 1px solid var(--heading-color)!important;
   box-shadow: 0 0 3px 0 var(--tag-shadow);
   }
 
   .tag:hover {
-    background: transparent;
-    color: var(--site-title-color)!important;
+
   }
 
   span {
-    margin-left: 0.6em;
+    margin-left: 0.1em;
 /*  font-size: 0.7em; */
     font-family: Oswald, sans-serif;
   }

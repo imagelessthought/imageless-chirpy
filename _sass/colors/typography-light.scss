@@ -3,6 +3,40 @@
  */
 
 @mixin light-scheme {
+
+  /* Added; MBaggett */
+  --tgcolor: black;
+  --tgbrd: #C5E1A5;
+  --tgbg: #C5E1A5;
+  --tghvcolor: white;
+  --tghvbrd: #44611F;
+  --tghvbg: black;
+
+  --title: black;
+
+  --flexbg: #44611F;
+  --flexsh: #C5E1A5;
+  --flexcolor: #C5E1A5; 
+
+  
+  --lnkcolor: white;
+  --lnkbrd: #C5E1A5;
+  --lnkbg: #44611F;
+  --lnkhvcolor: black;
+  --lnkhvbrd: #44611F;
+  --lnkhvbg: #ee9d07;
+  --lnkactbg: #ee9d07;
+  --linkactcolor: white;
+
+  --iulcolor: #D5D8DC;
+  --iulbrd: #C5E1A5;
+  --iulbg: #44611F;
+  --iulhvbrd: white;
+  --iulhvbg: black;
+  --iulhvcolor: rgb(116, 178, 243);
+
+  --plinecolor: black;
+
   /* Framework color */
   --main-bg: white;
   --mask-bg: #c1c3c5;
