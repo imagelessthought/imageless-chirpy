@@ -726,7 +726,9 @@ $btn-mb: 0.5rem;
     width: 7rem;
     height: 7rem;
     overflow: hidden;
-    filter: invert(100%);
+    background-color: var(--avatarbg);
+
+    /* filter: invert(100%); */
 
     /* box-shadow: var(--avatar-border-color) 0 0 0 2px; */
     transform: translateZ(0); /* fixed the zoom in Safari */
@@ -737,7 +739,7 @@ $btn-mb: 0.5rem;
       transition: transform 0.5s;
       justify-content: center;
       padding: 1.2rem .5rem .5rem .4rem;
-      background-color: inherit;
+      background-color: none;
 
       &:hover {
         transform: scale(1.15);
@@ -746,14 +748,14 @@ $btn-mb: 0.5rem;
   }
 
   .rounded-circle {
-    background-color: var(--sidebar-muted-color)!important;
-    border: 5px solid #C2185B!important;
+    /* background-color:*/
+    border: 5px solid  var(--avatarbrd)!important;
     outline: none;
     border-radius: 50%!important;
     width: 150px;
     height: 150px;
     margin: 0 auto;
-    box-shadow: (0 0 10px 10px) white;
+    box-shadow: (0 0 10px 10px) var(--avatarsh);
   }
   
   .profile-wrapper {

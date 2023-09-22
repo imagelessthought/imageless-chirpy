@@ -25,10 +25,25 @@ html {
   border-radius: 50%!important;
   width: 100px;
   height: 100px;
-  margin: 0 auto;
-  padding: 0rem;
-  box-shadow: (0 0 10px 10px) var(--sidebar-active-color);
-  }
+  padding: .75rem!important;
+  background-color: var(--avatarbg);
+  box-shadow: (0 0 10px 10px) var(--avatarsh);
+  border: 5px solid blue;
+  margin: 3rem 0 3rem 1rem; 
+  text-align: center; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.logo-green{
+  border-color: var(--avatarbrd)!important;
+}
+
+.rounded-logo img {
+  width: 75px;
+  height: auto;
+}
 
   .rounded-logo:hover {
     transform: scale(1.5);
