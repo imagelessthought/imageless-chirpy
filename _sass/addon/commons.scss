@@ -256,12 +256,12 @@ i {
 #access-lastmod {
   a {
     &:hover {
-      @extend %link-hover;
+      color: var(--stdhov)!important;
     }
 
     @extend %no-bottom-border;
 
-    color: inherit;
+    color: var(--stdlink)!important;
   }
 }
 

@@ -299,11 +299,11 @@ b, strong {
     padding: .2rem .2rem .2rem .5rem!important;
     width: 100%;
     margin:0;
-    color: var(--lnkcolor);
+
     }
 
     .rsidebar-links a:link, .rsidebar-links a:visited {
- 
+      color: var(--lnkcolor)!important;
       background-color: var(--lnkbg)!important;
       border: inherit;
     }
