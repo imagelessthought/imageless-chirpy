@@ -18,6 +18,8 @@
 <!-- `site.alt_lang` can specify a language different from the UI -->
 <html lang="en" 
   
+    data-mode="dark"
+  
 >
   <!-- The Head -->
 
@@ -117,151 +119,6 @@
   
 
   <!-- JavaScript -->
-
-  
-    <!-- Switch the mode between dark and light. -->
-
-<script type="text/javascript">
-  class ModeToggle {
-    static get MODE_KEY() {
-      return 'mode';
-    }
-    static get MODE_ATTR() {
-      return 'data-mode';
-    }
-    static get DARK_MODE() {
-      return 'dark';
-    }
-    static get LIGHT_MODE() {
-      return 'light';
-    }
-    static get ID() {
-      return 'mode-toggle';
-    }
-
-    constructor() {
-      if (this.hasMode) {
-        if (this.isDarkMode) {
-          if (!this.isSysDarkPrefer) {
-            this.setDark();
-          }
-        } else {
-          if (this.isSysDarkPrefer) {
-            this.setLight();
-          }
-        }
-      }
-
-      let self = this;
-
-      /* always follow the system prefers */
-      this.sysDarkPrefers.addEventListener('change', () => {
-        if (self.hasMode) {
-          if (self.isDarkMode) {
-            if (!self.isSysDarkPrefer) {
-              self.setDark();
-            }
-          } else {
-            if (self.isSysDarkPrefer) {
-              self.setLight();
-            }
-          }
-
-          self.clearMode();
-        }
-
-        self.notify();
-      });
-    } /* constructor() */
-
-    get sysDarkPrefers() {
-      return window.matchMedia('(prefers-color-scheme: dark)');
-    }
-
-    get isSysDarkPrefer() {
-      return this.sysDarkPrefers.matches;
-    }
-
-    get isDarkMode() {
-      return this.mode === ModeToggle.DARK_MODE;
-    }
-
-    get isLightMode() {
-      return this.mode === ModeToggle.LIGHT_MODE;
-    }
-
-    get hasMode() {
-      return this.mode != null;
-    }
-
-    get mode() {
-      return sessionStorage.getItem(ModeToggle.MODE_KEY);
-    }
-
-    /* get the current mode on screen */
-    get modeStatus() {
-      if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) {
-        return ModeToggle.DARK_MODE;
-      } else {
-        return ModeToggle.LIGHT_MODE;
-      }
-    }
-
-    setDark() {
-      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.DARK_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
-    }
-
-    setLight() {
-      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
-    }
-
-    clearMode() {
-      document.documentElement.removeAttribute(ModeToggle.MODE_ATTR);
-      sessionStorage.removeItem(ModeToggle.MODE_KEY);
-    }
-
-    /* Notify another plugins that the theme mode has changed */
-    notify() {
-      window.postMessage(
-        {
-          direction: ModeToggle.ID,
-          message: this.modeStatus
-        },
-        '*'
-      );
-    }
-
-    flipMode() {
-      if (this.hasMode) {
-        if (this.isSysDarkPrefer) {
-          if (this.isLightMode) {
-            this.clearMode();
-          } else {
-            this.setLight();
-          }
-        } else {
-          if (this.isDarkMode) {
-            this.clearMode();
-          } else {
-            this.setDark();
-          }
-        }
-      } else {
-        if (this.isSysDarkPrefer) {
-          this.setLight();
-        } else {
-          this.setDark();
-        }
-      }
-
-      this.notify();
-    } /* flipMode() */
-  } /* ModeToggle */
-
-  const modeToggle = new ModeToggle();
-</script>
 
   
 
@@ -384,17 +241,7 @@
   </nav>
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
-      
-    <button type="button" class="mode-toggle btn" aria-label="Switch Mode">
-        <i class="fas fa-adjust"></i>
-      </button>
-      
-      <span>  </span><span class="icon-border"></span><span>  </span>
-
-      
-      
-
-      
+    
 
     
       
@@ -538,11 +385,6 @@
   
 
   
-
-  
-  
-
-  
     
     
 
@@ -576,6 +418,11 @@
     
 
     
+
+  
+
+  
+  
 
   
 
@@ -678,9 +525,9 @@
 <p>WSL 2 is only available for Windows 10, Version 1903, Build 18362 or later.  If you are running a compatible version of Windows 10, you will need to <a href="https://learn.microsoft.com/en-us/windows/wsl/install#upgrade-version-from-wsl-1-to-wsl-2" title="Upgrade to WSL2" target="_blank" rel="noopener noreferrer">update your version of WSL</a>. Windows 11 was released with WSL 2 installed.
 To get started, visit the <a href="https://learn.microsoft.com/en-us/windows/wsl/about" title="Microsoft WSL2 Website" target="_blank" rel="noopener noreferrer">Microsoft website for WSL2</a>.</p>
 
-<h3 id="some-improvements-in-wsl2">
+<h2 id="some-improvements-in-wsl2">
 <span class="me-2">Some improvements in WSL2:</span><a href="#some-improvements-in-wsl2" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
-</h3>
+</h2>
 <ul>
   <li>Uses a full Linux kerel.</li>
   <li>Support for full system call compatibility.</li>
@@ -694,38 +541,37 @@ To get started, visit the <a href="https://learn.microsoft.com/en-us/windows/wsl
 
 <p><a href="https://www.linuxfoundation.org" title="The Linux Foundation" target="_blank" rel="noopener noreferrer">Linux Foundation</a> offers a <a href="https://www.edx.org/course/introduction-to-linux" title="Free Linux Training" target="_blank" rel="noopener noreferrer">free training course</a> if you are new to Linux or need a refresher. <a href="https://itss.untsystem.edu/divisions/mrs/it-training/linkedin-learning.php" title="LinkedInLearning" target="_blank" rel="noopener noreferrer">LinkedInLearning</a> also offers several Linux tutorials.</p>
 
-<hr>
-<h3 id="relevant-links">
+<h2 id="relevant-links">
 <span class="me-2">Relevant Links</span><a href="#relevant-links" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
-</h3>
+</h2>
 <ul>
   <li>
 <a href="https://kernel.org/" title="Official Linux Kernal Page" class="iul" target="_blank" rel="noopener noreferrer">Linux Kernal</a>
-   The Linux Kernel Organization is managed by The Linux Foundation, which provides full technical, financial and staffing support for running and maintaining the kernel.org infrastructure.</li>
+The Linux Kernel Organization is managed by The Linux Foundation, which provides full technical, financial and staffing support for running and maintaining the kernel.org infrastructure.</li>
   <li>
 <a href="https://www.linuxfoundation.org/" title="Linux Foundation" class="iul" target="_blank" rel="noopener noreferrer">Linux Foundation</a>
-   The Linux Foundation provides a neutral, trusted hub for developers and organizations to code, manage, and scale open technology projects and ecosystems</li>
+The Linux Foundation provides a neutral, trusted hub for developers and organizations to code, manage, and scale open technology projects and ecosystems</li>
   <li>
 <a href="https://learn.microsoft.com/en-us/windows/wsl/" title="Microsoft WSL" class="iul" target="_blank" rel="noopener noreferrer">Microsoft WSL Website</a>
-   The offical <strong>Microsoft WSL</strong> website.  This site provides the steps to install, configure and troubleshoot WSL.</li>
+The offical <strong>Microsoft WSL</strong> website.  This site provides the steps to install, configure and troubleshoot WSL.</li>
   <li>
 <a href="https://learn.microsoft.com/en-us/windows/wsl/setup/environment" title="WSL2 dev environment" class="iul" target="_blank" rel="noopener noreferrer">WSL2 Development Environment</a>
-   A tutorial for setting up WSL2 as a development environment.</li>
+A tutorial for setting up WSL2 as a development environment.</li>
   <li>
 <a href="https://learn.microsoft.com/en-us/windows/wsl/basic-commands" title="Basic WSL commands" class="iul" target="_blank" rel="noopener noreferrer">Basic WSL Commands</a> 
-   Powershell commands to setup and configure WSL2.</li>
+Powershell commands to setup and configure WSL2.</li>
   <li>
 <a href="https://devblogs.microsoft.com/commandline/" title="Blog: Windows Command Line" class="iul" target="_blank" rel="noopener noreferrer">Windows Commandline</a>
-   A development blog that provides updates and useful information on WSL.</li>
+A development blog that provides updates and useful information on WSL.</li>
   <li>
 <a href="https://ubuntu.com/wsl" title="Wubunt WSL Page" class="iul" target="_blank" rel="noopener noreferrer">Ubuntu WSL</a>
-   This is the main suport page for Ubuntu on WSL.</li>
+This is the main suport page for Ubuntu on WSL.</li>
   <li>
 <a href="https://ubuntu.com/tutorials?topic=wsl2" title="Ubuntu WSL Tutorials Direct Link" class="iul" target="_blank" rel="noopener noreferrer">Ubuntu Tutorials</a>
-   This is a direct link to the Ubuntu-WSL tutorials.</li>
+This is a direct link to the Ubuntu-WSL tutorials.</li>
   <li>
 <a href="https://itsfoss.com/linux-commands-cheat-sheets/" title="Linux Cheatsheet" class="iul" target="_blank" rel="noopener noreferrer">Linux Cheatsheets</a>
-   A collection of Linux Cheatsheets, there are plenty of others available but these will get you started.</li>
+A collection of Linux Cheatsheets, there are plenty of others available but these will get you started.</li>
 </ul>
 
 </div>
@@ -808,12 +654,7 @@ To get started, visit the <a href="https://learn.microsoft.com/en-us/windows/wsl
 
           <!-- panel -->
           <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 text-muted">
-            <div><span class="rounded-logo logo-green">
-<a href="/signage/" alt="IT" title="Universal Digital Signage"><img src="/assets/images/website/creative-idea-solution-icon.svg"></a>
-</span></div>
-
             <div class="access">
-
               <!-- Get the last 5 posts from lastmod list. -->
 
 
@@ -1308,13 +1149,14 @@ To get started, visit the <a href="https://learn.microsoft.com/en-us/windows/wsl
 
             </div>
             
+            
               
               
 
 
 
   <section id="toc-wrapper" class="ps-0 pe-4 mb-5">
-    <h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2>
+    <h2 class="panel-heading pt-2 mb-2 sizeup">Contents</h2>
     <nav id="toc"></nav>
   </section>
 
@@ -1322,7 +1164,7 @@ To get started, visit the <a href="https://learn.microsoft.com/en-us/windows/wsl
             
            </aside>
 
-        </div>
+          </div>
 
         <div class="row">
           <!-- tail -->

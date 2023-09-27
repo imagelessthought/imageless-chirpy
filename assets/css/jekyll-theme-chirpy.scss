@@ -15,6 +15,22 @@ html {
 --primewhi: white;
 }
 
+.small p {
+  font-size: .85em!important;
+}
+
+.sizeup {
+  font-size: 1.25rem!important;
+  margin-left: 1rem;
+  margin-bottom: .5rem!important;
+  padding: 0 3px 0 0;
+  color: var(--text-color)!important;
+}
+
+a.toc-link {
+  color: var(--text-muted-color)!important;
+}
+
 .mt-5 {
   margin-top: 1rem!important;
 }
@@ -28,7 +44,7 @@ html {
   background-color: var(--avatarbg);
   box-shadow: (0 0 10px 10px) var(--avatarsh);
   border: 5px solid blue;
-  margin: 3rem 0 3rem 1rem; 
+  margin: 4rem 0 3rem 2rem; 
   text-align: center; 
   display: flex; 
   justify-content: center; 
@@ -83,7 +99,7 @@ b, strong {
     outline: none;
     background: var(--iulbg);
     border-radius: 5px;
-    padding: .25rem .5rem .4rem .5rem;
+    padding: .15rem .5rem .20rem .5rem;
     margin-right: .25rem;
     color: var(--iulcolor);
   }
@@ -110,7 +126,7 @@ b, strong {
     vertical-align: middle;
     display: inline-block;
     background-repeat: no-repeat;
-    margin-right: .5rem;
+    margin-right: .1rem;
   }
 
   .iul-nb {

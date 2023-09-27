@@ -18,6 +18,8 @@
 <!-- `site.alt_lang` can specify a language different from the UI -->
 <html lang="en" 
   
+    data-mode="dark"
+  
 >
   <!-- The Head -->
 
@@ -117,151 +119,6 @@
   
 
   <!-- JavaScript -->
-
-  
-    <!-- Switch the mode between dark and light. -->
-
-<script type="text/javascript">
-  class ModeToggle {
-    static get MODE_KEY() {
-      return 'mode';
-    }
-    static get MODE_ATTR() {
-      return 'data-mode';
-    }
-    static get DARK_MODE() {
-      return 'dark';
-    }
-    static get LIGHT_MODE() {
-      return 'light';
-    }
-    static get ID() {
-      return 'mode-toggle';
-    }
-
-    constructor() {
-      if (this.hasMode) {
-        if (this.isDarkMode) {
-          if (!this.isSysDarkPrefer) {
-            this.setDark();
-          }
-        } else {
-          if (this.isSysDarkPrefer) {
-            this.setLight();
-          }
-        }
-      }
-
-      let self = this;
-
-      /* always follow the system prefers */
-      this.sysDarkPrefers.addEventListener('change', () => {
-        if (self.hasMode) {
-          if (self.isDarkMode) {
-            if (!self.isSysDarkPrefer) {
-              self.setDark();
-            }
-          } else {
-            if (self.isSysDarkPrefer) {
-              self.setLight();
-            }
-          }
-
-          self.clearMode();
-        }
-
-        self.notify();
-      });
-    } /* constructor() */
-
-    get sysDarkPrefers() {
-      return window.matchMedia('(prefers-color-scheme: dark)');
-    }
-
-    get isSysDarkPrefer() {
-      return this.sysDarkPrefers.matches;
-    }
-
-    get isDarkMode() {
-      return this.mode === ModeToggle.DARK_MODE;
-    }
-
-    get isLightMode() {
-      return this.mode === ModeToggle.LIGHT_MODE;
-    }
-
-    get hasMode() {
-      return this.mode != null;
-    }
-
-    get mode() {
-      return sessionStorage.getItem(ModeToggle.MODE_KEY);
-    }
-
-    /* get the current mode on screen */
-    get modeStatus() {
-      if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) {
-        return ModeToggle.DARK_MODE;
-      } else {
-        return ModeToggle.LIGHT_MODE;
-      }
-    }
-
-    setDark() {
-      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.DARK_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
-    }
-
-    setLight() {
-      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
-    }
-
-    clearMode() {
-      document.documentElement.removeAttribute(ModeToggle.MODE_ATTR);
-      sessionStorage.removeItem(ModeToggle.MODE_KEY);
-    }
-
-    /* Notify another plugins that the theme mode has changed */
-    notify() {
-      window.postMessage(
-        {
-          direction: ModeToggle.ID,
-          message: this.modeStatus
-        },
-        '*'
-      );
-    }
-
-    flipMode() {
-      if (this.hasMode) {
-        if (this.isSysDarkPrefer) {
-          if (this.isLightMode) {
-            this.clearMode();
-          } else {
-            this.setLight();
-          }
-        } else {
-          if (this.isDarkMode) {
-            this.clearMode();
-          } else {
-            this.setDark();
-          }
-        }
-      } else {
-        if (this.isSysDarkPrefer) {
-          this.setLight();
-        } else {
-          this.setDark();
-        }
-      }
-
-      this.notify();
-    } /* flipMode() */
-  } /* ModeToggle */
-
-  const modeToggle = new ModeToggle();
-</script>
 
   
 
@@ -384,17 +241,7 @@
   </nav>
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
-      
-    <button type="button" class="mode-toggle btn" aria-label="Switch Mode">
-        <i class="fas fa-adjust"></i>
-      </button>
-      
-      <span>  </span><span class="icon-border"></span><span>  </span>
-
-      
-      
-
-      
+    
 
     
       
@@ -538,11 +385,6 @@
   
 
   
-
-  
-  
-
-  
     
     
 
@@ -576,6 +418,11 @@
     
 
     
+
+  
+
+  
+  
 
   
 
@@ -657,7 +504,7 @@
 
 
 <!-- return element -->
-<span class="readtime" data-bs-toggle="tooltip" data-bs-placement="bottom" title="257 words">
+<span class="readtime" data-bs-toggle="tooltip" data-bs-placement="bottom" title="263 words">
   <em>1 min</em> read</span>
 
     </div>
@@ -671,37 +518,36 @@
 
 <p>Below are links to some glossaries and articles to further assist you with the terminology.</p>
 
-<h3 id="glossaries-of-ai-terminology">
+<h2 id="glossaries-of-ai-terminology">
 <span class="me-2">Glossaries of AI Terminology:</span><a href="#glossaries-of-ai-terminology" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
-</h3>
+</h2>
 <ul>
   <li>
-<a href="https://www.artificial-intelligence.blog/terminology" title="AI Blog Terminology, Searchable" target="_blank" rel="noopener noreferrer">AI Blog</a>   Provides a searchable database of terms. Clicking on the term in search base will bnring up a more verbose description of the term.</li>
+<a href="https://www.artificial-intelligence.blog/terminology" title="AI Blog Terminology, Searchable" target="_blank" rel="noopener noreferrer">AI Blog</a> provides a searchable database of terms. Clicking on the term in search base will bnring up a more verbose description of the term.</li>
   <li>
-<a href="https://en.wikipedia.org/wiki/Glossary_of_artificial_intelligence" title="Wikipedia AI Terms" target="_blank" rel="noopener noreferrer">Wikipedia</a>   Maintains a glossary of AI terms that is pretty thorough and provides links to full articles on each term.</li>
+<a href="https://en.wikipedia.org/wiki/Glossary_of_artificial_intelligence" title="Wikipedia AI Terms" target="_blank" rel="noopener noreferrer">Wikipedia</a> maintains a glossary of AI terms that is pretty thorough and provides links to full articles on each term.</li>
   <li>
-<a href="https://www.expert.ai/glossary-of-ai-terms/" title="AI" target="_blank" rel="noopener noreferrer">Expert AI</a>   An extensive list of terms to build and expand your knowledge of natural language and artificial intelligence technologies.</li>
+<a href="https://www.expert.ai/glossary-of-ai-terms/" title="AI" target="_blank" rel="noopener noreferrer">Expert AI</a> provides an extensive list of terms to build and expand your knowledge of natural language and artificial intelligence technologies.</li>
   <li>
-<a href="https://digital-strategy.ec.europa.eu/en/library/eu-us-terminology-and-taxonomy-artificial-intelligence" title="EU-US AI Terms" target="_blank" rel="noopener noreferrer">EU-U.S. Terminology and Taxonomy for Artificial Intelligence</a>   A group of experts engaged to prepare an initial draft AI terminologies and taxonomies.</li>
+<a href="https://digital-strategy.ec.europa.eu/en/library/eu-us-terminology-and-taxonomy-artificial-intelligence" title="EU-US AI Terms" target="_blank" rel="noopener noreferrer">EU-U.S. Terminology and Taxonomy for Artificial Intelligence</a>: A group of experts engaged to prepare an initial draft of AI terminologies and taxonomies.</li>
 </ul>
 
-<hr>
-<h3 id="relevant-links">
+<h2 id="relevant-links">
 <span class="me-2">Relevant Links</span><a href="#relevant-links" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
-</h3>
+</h2>
 <ul>
   <li>
 <a href="https://lablab.ai/t/chatgpt-guide" title="OpenAI: ChatGPT" class="iul" target="_blank" rel="noopener noreferrer">ChatGPT</a>
-   An AI-powered language model developed by OpenAI, capable of generating human-like text based on context and past conversations.</li>
+An AI-powered language model developed by OpenAI, capable of generating human-like text based on context and past conversations.</li>
   <li>
 <a href="https://bard.google.com" title="Google-Bard" class="iul" target="_blank" rel="noopener noreferrer">Google Bard</a>
-   A conversational generative artificial intelligence chatbot developed by Google, based initially on the LaMDA family of large language models and later the PaLM LLM.</li>
+A conversational generative artificial intelligence chatbot developed by Google, based initially on the LaMDA family of large language models and later the PaLM LLM.</li>
   <li>
 <a href="https://www.microsoft.com/en-us/ai" title="Microsoft AI" class="iul" target="_blank" rel="noopener noreferrer">Microsoft AI</a>
-   This page provides you with useful background on Microsoft AI, their approach, newest tools and features, the latest news and more.</li>
+This page provides you with useful background on Microsoft AI, their approach, newest tools and features, the latest news and more.</li>
   <li>
 <a href="https://ai.meta.com/" title="Meta AI" class="iul" target="_blank" rel="noopener noreferrer">Meta AI</a>
-   Meta AI is an academic research laboratory focused on generating knowledge for the AI community.  Meta AI intends to develop various forms of artificial intelligence, improving augmented and artificial reality technologies.</li>
+Meta AI is an academic research laboratory focused on generating knowledge for the AI community.  Meta AI intends to develop various forms of artificial intelligence, improving augmented and artificial reality technologies.</li>
 </ul>
 
 </div>
@@ -778,12 +624,7 @@
 
           <!-- panel -->
           <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 text-muted">
-            <div><span class="rounded-logo logo-green">
-<a href="/signage/" alt="IT" title="Universal Digital Signage"><img src="/assets/images/website/creative-idea-solution-icon.svg"></a>
-</span></div>
-
             <div class="access">
-
               <!-- Get the last 5 posts from lastmod list. -->
 
 
@@ -1278,13 +1119,14 @@
 
             </div>
             
+            
               
               
 
 
 
   <section id="toc-wrapper" class="ps-0 pe-4 mb-5">
-    <h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2>
+    <h2 class="panel-heading pt-2 mb-2 sizeup">Contents</h2>
     <nav id="toc"></nav>
   </section>
 
@@ -1292,7 +1134,7 @@
             
            </aside>
 
-        </div>
+          </div>
 
         <div class="row">
           <!-- tail -->

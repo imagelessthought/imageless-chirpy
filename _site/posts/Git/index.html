@@ -18,6 +18,8 @@
 <!-- `site.alt_lang` can specify a language different from the UI -->
 <html lang="en" 
   
+    data-mode="dark"
+  
 >
   <!-- The Head -->
 
@@ -117,151 +119,6 @@
   
 
   <!-- JavaScript -->
-
-  
-    <!-- Switch the mode between dark and light. -->
-
-<script type="text/javascript">
-  class ModeToggle {
-    static get MODE_KEY() {
-      return 'mode';
-    }
-    static get MODE_ATTR() {
-      return 'data-mode';
-    }
-    static get DARK_MODE() {
-      return 'dark';
-    }
-    static get LIGHT_MODE() {
-      return 'light';
-    }
-    static get ID() {
-      return 'mode-toggle';
-    }
-
-    constructor() {
-      if (this.hasMode) {
-        if (this.isDarkMode) {
-          if (!this.isSysDarkPrefer) {
-            this.setDark();
-          }
-        } else {
-          if (this.isSysDarkPrefer) {
-            this.setLight();
-          }
-        }
-      }
-
-      let self = this;
-
-      /* always follow the system prefers */
-      this.sysDarkPrefers.addEventListener('change', () => {
-        if (self.hasMode) {
-          if (self.isDarkMode) {
-            if (!self.isSysDarkPrefer) {
-              self.setDark();
-            }
-          } else {
-            if (self.isSysDarkPrefer) {
-              self.setLight();
-            }
-          }
-
-          self.clearMode();
-        }
-
-        self.notify();
-      });
-    } /* constructor() */
-
-    get sysDarkPrefers() {
-      return window.matchMedia('(prefers-color-scheme: dark)');
-    }
-
-    get isSysDarkPrefer() {
-      return this.sysDarkPrefers.matches;
-    }
-
-    get isDarkMode() {
-      return this.mode === ModeToggle.DARK_MODE;
-    }
-
-    get isLightMode() {
-      return this.mode === ModeToggle.LIGHT_MODE;
-    }
-
-    get hasMode() {
-      return this.mode != null;
-    }
-
-    get mode() {
-      return sessionStorage.getItem(ModeToggle.MODE_KEY);
-    }
-
-    /* get the current mode on screen */
-    get modeStatus() {
-      if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) {
-        return ModeToggle.DARK_MODE;
-      } else {
-        return ModeToggle.LIGHT_MODE;
-      }
-    }
-
-    setDark() {
-      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.DARK_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
-    }
-
-    setLight() {
-      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
-    }
-
-    clearMode() {
-      document.documentElement.removeAttribute(ModeToggle.MODE_ATTR);
-      sessionStorage.removeItem(ModeToggle.MODE_KEY);
-    }
-
-    /* Notify another plugins that the theme mode has changed */
-    notify() {
-      window.postMessage(
-        {
-          direction: ModeToggle.ID,
-          message: this.modeStatus
-        },
-        '*'
-      );
-    }
-
-    flipMode() {
-      if (this.hasMode) {
-        if (this.isSysDarkPrefer) {
-          if (this.isLightMode) {
-            this.clearMode();
-          } else {
-            this.setLight();
-          }
-        } else {
-          if (this.isDarkMode) {
-            this.clearMode();
-          } else {
-            this.setDark();
-          }
-        }
-      } else {
-        if (this.isSysDarkPrefer) {
-          this.setLight();
-        } else {
-          this.setDark();
-        }
-      }
-
-      this.notify();
-    } /* flipMode() */
-  } /* ModeToggle */
-
-  const modeToggle = new ModeToggle();
-</script>
 
   
 
@@ -384,17 +241,7 @@
   </nav>
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
-      
-    <button type="button" class="mode-toggle btn" aria-label="Switch Mode">
-        <i class="fas fa-adjust"></i>
-      </button>
-      
-      <span>  </span><span class="icon-border"></span><span>  </span>
-
-      
-      
-
-      
+    
 
     
       
@@ -538,11 +385,6 @@
   
 
   
-
-  
-  
-
-  
     
     
 
@@ -564,6 +406,11 @@
     
 
     
+
+  
+
+  
+  
 
   
 
@@ -665,35 +512,34 @@
 
 <p><a href="https://github.com" title="GitHub Website" target="_blank" rel="noopener noreferrer">GitHub</a> is very popular but there are other options available: <a href="https://about.gitlab.com" title="Gitlab Website" target="_blank" rel="noopener noreferrer">Gitlab</a> and <a href="https://bitbucket.org" title="Bitbucket Website" target="_blank" rel="noopener noreferrer">Bitbucket</a>.</p>
 
-<hr>
-<h3 id="relevant-links">
+<h2 id="relevant-links">
 <span class="me-2">Relevant Links</span><a href="#relevant-links" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
-</h3>
+</h2>
 <ul>
   <li>
 <a href="https://git-scm.com/book/en/v2" title="Pro Git by S. Chacon and B. Straub" class="iul" target="_blank" rel="noopener noreferrer">Pro Git</a>
-   A free manual to Git, recommended and hosted by the Git community. A printed version is available through Amazon but it is the same material that is available here for free.</li>
+A free manual to Git, recommended and hosted by the Git community. A printed version is available through Amazon but it is the same material that is available here for free.</li>
   <li>
 <a href="https://git-scm.com/" title="Git Website" class="iul" target="_blank" rel="noopener noreferrer">Git</a> 
-   This is the website for the open source Git community.  You can download the Git package for Windows, Mac, and Linux, review the documentation, and find a GUI if you prefer it to the CLI.</li>
+This is the website for the open source Git community.  You can download the Git package for Windows, Mac, and Linux, review the documentation, and find a GUI if you prefer it to the CLI.</li>
   <li>
 <a href="https://github.com" title="GitHub Website" class="iul" target="_blank" rel="noopener noreferrer">GitHub</a> 
-   GitHub is a platform implemntation of Git: the git commands are the same regardless of the Git platform.</li>
+GitHub is a platform implemntation of Git: the git commands are the same regardless of the Git platform.</li>
   <li>
 <a href="https://github.github.com/gfm/" title="GitHub Flavored Markdown Specs" class="iul" target="_blank" rel="noopener noreferrer">GitHub Flavored Markdown Specs</a> 
-   GitHub Flavored Markdown (GFM) is the dialect of Markdown that is currently supported for user content on GitHub.com and GitHub Enterprise. This formal specification, based on the CommonMark Spec, defines the syntax and semantics of this dialect.</li>
+GitHub Flavored Markdown (GFM) is the dialect of Markdown that is currently supported for user content on GitHub.com and GitHub Enterprise. This formal specification, based on the CommonMark Spec, defines the syntax and semantics of this dialect.</li>
   <li>
 <a href="https://pages.github.com" title="GitHub Pages" class="iul" target="_blank" rel="noopener noreferrer">GitHub Pages</a>
-   To setup your free website on hosted in your GitHub repository, follow the instrcutions here.</li>
+To setup your free website on hosted in your GitHub repository, follow the instrcutions here.</li>
   <li>
 <a href="https://www.simplilearn.com/tutorials/git-tutorial/git-tutorial-for-beginner?tag=technology/" title="Git Tutorial fro Beginners" class="iul" target="_blank" rel="noopener noreferrer">Git Tutorial for Beginners</a>
-   This is free video tutorial offered by Simplilearn.  It covers Github and GitLab and provides a pretty solid introduction to using Git.</li>
+This is free video tutorial offered by Simplilearn.  It covers Github and GitLab and provides a pretty solid introduction to using Git.</li>
   <li>
 <a href="https://www.coursera.org/learn/getting-started-with-git-and-github" title="Getting Started with Git and GitHub" class="iul" target="_blank" rel="noopener noreferrer">Getting Started with Git and GitHub</a> 
-   The free course from Coursera that covers everything you would need to get started using Git effectively (takes about 8 hours to complete).</li>
+The free course from Coursera that covers everything you would need to get started using Git effectively (takes about 8 hours to complete).</li>
   <li>
 <a href="https://itss.untsystem.edu/divisions/mrs/it-training/linkedin-learning.php" title="LinkedInLearning" class="iul" target="_blank" rel="noopener noreferrer">LinkedInLearning</a> 
-   Some shorter (under 2 hours) getting-started options: <a href="https://www.linkedin.com/learning/learning-github-18719601" title="LinkedInLearning Course" target="_blank" rel="noopener noreferrer">Learning GitHub</a> and <a href="https://www.linkedin.com/learning/learning-git-and-github-14213624" title="LinkedInLearning" target="_blank" rel="noopener noreferrer">Learning Git and GitHub</a>.</li>
+Some shorter (under 2 hours) getting-started options: <a href="https://www.linkedin.com/learning/learning-github-18719601" title="LinkedInLearning Course" target="_blank" rel="noopener noreferrer">Learning GitHub</a> and <a href="https://www.linkedin.com/learning/learning-git-and-github-14213624" title="LinkedInLearning" target="_blank" rel="noopener noreferrer">Learning Git and GitHub</a>.</li>
 </ul>
 
 </div>
@@ -772,12 +618,7 @@
 
           <!-- panel -->
           <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 text-muted">
-            <div><span class="rounded-logo logo-green">
-<a href="/signage/" alt="IT" title="Universal Digital Signage"><img src="/assets/images/website/creative-idea-solution-icon.svg"></a>
-</span></div>
-
             <div class="access">
-
               <!-- Get the last 5 posts from lastmod list. -->
 
 
@@ -1272,13 +1113,14 @@
 
             </div>
             
+            
               
               
 
 
 
   <section id="toc-wrapper" class="ps-0 pe-4 mb-5">
-    <h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2>
+    <h2 class="panel-heading pt-2 mb-2 sizeup">Contents</h2>
     <nav id="toc"></nav>
   </section>
 
@@ -1286,7 +1128,7 @@
             
            </aside>
 
-        </div>
+          </div>
 
         <div class="row">
           <!-- tail -->

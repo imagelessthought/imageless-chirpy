@@ -193,6 +193,7 @@ footer {
     line-height: 1.75;
     text-align: center;
     margin-bottom: 0;
+    color: var(--text-color);
   }
 }
 
@@ -209,7 +210,7 @@ i {
 .access {
   top: 2rem;
   transition: top 0.2s ease-in-out;
-  margin-top: 1rem;
+  margin-top: 2.5rem;
   margin-bottom: 1rem;
 
   &:only-child {
@@ -219,10 +220,11 @@ i {
 
   > section {
     padding-left: 1rem;
-    border-left: 1px solid var(--main-border-color);
+    border-left: 1px solid var(--lnkbrd);
+    margin-bottom: 2rem!important;
 
     &:not(:last-child) {
-      margin-bottom: 4rem;
+
     }
   }
 
@@ -613,7 +615,7 @@ main {
 
 /* overwrite bootstrap muted */
 .text-muted {
-  color: var(--text-muted-color) !important;
+  color: var(--stdlink)!important;
 }
 
 /* Overwrite bootstrap tooltip */
@@ -829,7 +831,7 @@ $btn-mb: 0.5rem;
         }
 
         span {
-          font-size: 90%;
+          font-size: 80%; /* 90% */
           letter-spacing: 0.2px;
         }
       }

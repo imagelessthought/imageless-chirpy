@@ -18,6 +18,8 @@
 <!-- `site.alt_lang` can specify a language different from the UI -->
 <html lang="en" 
   
+    data-mode="dark"
+  
 >
   <!-- The Head -->
 
@@ -117,151 +119,6 @@
   
 
   <!-- JavaScript -->
-
-  
-    <!-- Switch the mode between dark and light. -->
-
-<script type="text/javascript">
-  class ModeToggle {
-    static get MODE_KEY() {
-      return 'mode';
-    }
-    static get MODE_ATTR() {
-      return 'data-mode';
-    }
-    static get DARK_MODE() {
-      return 'dark';
-    }
-    static get LIGHT_MODE() {
-      return 'light';
-    }
-    static get ID() {
-      return 'mode-toggle';
-    }
-
-    constructor() {
-      if (this.hasMode) {
-        if (this.isDarkMode) {
-          if (!this.isSysDarkPrefer) {
-            this.setDark();
-          }
-        } else {
-          if (this.isSysDarkPrefer) {
-            this.setLight();
-          }
-        }
-      }
-
-      let self = this;
-
-      /* always follow the system prefers */
-      this.sysDarkPrefers.addEventListener('change', () => {
-        if (self.hasMode) {
-          if (self.isDarkMode) {
-            if (!self.isSysDarkPrefer) {
-              self.setDark();
-            }
-          } else {
-            if (self.isSysDarkPrefer) {
-              self.setLight();
-            }
-          }
-
-          self.clearMode();
-        }
-
-        self.notify();
-      });
-    } /* constructor() */
-
-    get sysDarkPrefers() {
-      return window.matchMedia('(prefers-color-scheme: dark)');
-    }
-
-    get isSysDarkPrefer() {
-      return this.sysDarkPrefers.matches;
-    }
-
-    get isDarkMode() {
-      return this.mode === ModeToggle.DARK_MODE;
-    }
-
-    get isLightMode() {
-      return this.mode === ModeToggle.LIGHT_MODE;
-    }
-
-    get hasMode() {
-      return this.mode != null;
-    }
-
-    get mode() {
-      return sessionStorage.getItem(ModeToggle.MODE_KEY);
-    }
-
-    /* get the current mode on screen */
-    get modeStatus() {
-      if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) {
-        return ModeToggle.DARK_MODE;
-      } else {
-        return ModeToggle.LIGHT_MODE;
-      }
-    }
-
-    setDark() {
-      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.DARK_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
-    }
-
-    setLight() {
-      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
-    }
-
-    clearMode() {
-      document.documentElement.removeAttribute(ModeToggle.MODE_ATTR);
-      sessionStorage.removeItem(ModeToggle.MODE_KEY);
-    }
-
-    /* Notify another plugins that the theme mode has changed */
-    notify() {
-      window.postMessage(
-        {
-          direction: ModeToggle.ID,
-          message: this.modeStatus
-        },
-        '*'
-      );
-    }
-
-    flipMode() {
-      if (this.hasMode) {
-        if (this.isSysDarkPrefer) {
-          if (this.isLightMode) {
-            this.clearMode();
-          } else {
-            this.setLight();
-          }
-        } else {
-          if (this.isDarkMode) {
-            this.clearMode();
-          } else {
-            this.setDark();
-          }
-        }
-      } else {
-        if (this.isSysDarkPrefer) {
-          this.setLight();
-        } else {
-          this.setDark();
-        }
-      }
-
-      this.notify();
-    } /* flipMode() */
-  } /* ModeToggle */
-
-  const modeToggle = new ModeToggle();
-</script>
 
   
 
@@ -384,17 +241,7 @@
   </nav>
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
-      
-    <button type="button" class="mode-toggle btn" aria-label="Switch Mode">
-        <i class="fas fa-adjust"></i>
-      </button>
-      
-      <span>  </span><span class="icon-border"></span><span>  </span>
-
-      
-      
-
-      
+    
 
     
       
@@ -538,11 +385,6 @@
   
 
   
-
-  
-  
-
-  
     
     
 
@@ -564,6 +406,11 @@
     
 
     
+
+  
+
+  
+  
 
   
 
@@ -665,35 +512,34 @@
 
 <p>Jekyll requires a few prerequisites <a href="https://www.ruby-lang.org/en" title="Ruby Programming Language Website" target="_blank" rel="noopener noreferrer">Ruby Programming Language</a>, <a href="https://rubygems.org" title="Ruby Gems Website" target="_blank" rel="noopener noreferrer">Ruby Gems</a>, <a href="https://gcc.gnu.org/" title='GCC Website"&gt;GCC' target="_blank" rel="noopener noreferrer">GCC</a> and <a href="https://www.gnu.org/software/make" title="GNU Make Website" target="_blank" rel="noopener noreferrer">GNU Make</a> : all free and open source and the installation instructions are included in the Jekyll <a href="https://jekyllrb.com/docs/" title="Jekyll Quickstart Instructions" target="_blank" rel="noopener noreferrer">Quick Start</a>.</p>
 
-<hr>
-<h3 id="relevant-links">
+<h2 id="relevant-links">
 <span class="me-2">Relevant Links</span><a href="#relevant-links" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
-</h3>
+</h2>
 <ul>
   <li>
 <a href="https://www.ruby-lang.org/en" title='Ruby Programming Language Website"&gt;Ruby Programming Language' class="iul" target="_blank" rel="noopener noreferrer">Ruby</a>
-   A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.</li>
+A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.</li>
   <li>
 <a href="https://rubygems.org" title="Ruby Gems Website" class="iul" target="_blank" rel="noopener noreferrer">RubyGems</a>
-   RubyGems.org is the Ruby community’s gem hosting service. Instantly find gems for your project or publish your gems and then install them.</li>
+RubyGems.org is the Ruby community’s gem hosting service. Instantly find gems for your project or publish your gems and then install them.</li>
   <li>
 <a href="https://gcc.gnu.org/" title="GCC Website" class="iul" target="_blank" rel="noopener noreferrer">Make</a>
-   The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Ada, Go, and D, as well as libraries for these languages (libstdc++,…). GCC was originally written as the compiler for the GNU operating system. The GNU system was developed to be 100% free software, free in the sense that it respects the user’s freedom.</li>
+The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Ada, Go, and D, as well as libraries for these languages (libstdc++,…). GCC was originally written as the compiler for the GNU operating system. The GNU system was developed to be 100% free software, free in the sense that it respects the user’s freedom.</li>
   <li>
 <a href="https://www.gnu.org/software/make" title="GNU Make Website" class="iul" target="_blank" rel="noopener noreferrer">GNU Make</a>
-   GNU Make is a tool which controls the generation of executables and other non-source files of a program from the program’s source files.</li>
+GNU Make is a tool which controls the generation of executables and other non-source files of a program from the program’s source files.</li>
   <li>
 <a href="https://www.markdownguide.org/tools/jekyll/" title="Jekyll Markdown Guide" class="iul" target="_blank" rel="noopener noreferrer">Jekyll Markdown Guide</a>
-   The Jekyll Markdown Guide, Jekyll converts the markdown content in your source files (.md) into html output.</li>
+The Jekyll Markdown Guide, Jekyll converts the markdown content in your source files (.md) into html output.</li>
   <li>
 <a href="https://kramdown.gettalong.org/" title="Kramdown Markdown" class="iul" target="_blank" rel="noopener noreferrer">Kramdown</a>
-   By default, Jekyll uses the kramdown Markdown processor with stock settings, but you can enable other kramdown options or even switch Jekyll to another Markdown processor.</li>
+By default, Jekyll uses the kramdown Markdown processor with stock settings, but you can enable other kramdown options or even switch Jekyll to another Markdown processor.</li>
   <li>
 <a href="https://jekyllrb.com/resources" title="Jekyll Resource Page" class="iul" target="_blank" rel="noopener noreferrer">Jekyll Resources</a>
-   Links to themes, plug-ins, deployment guides and other useful resources.</li>
+Links to themes, plug-ins, deployment guides and other useful resources.</li>
   <li>
 <a href="https://pages.github.com/" title="Github Pages website" class="iul" target="_blank" rel="noopener noreferrer">Github Pages</a> 
-   Jekyll can be implemented on a GitHub Page fairly quickly and easily.</li>
+Jekyll can be implemented on a GitHub Page fairly quickly and easily.</li>
 </ul>
 
 </div>
@@ -774,12 +620,7 @@
 
           <!-- panel -->
           <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 text-muted">
-            <div><span class="rounded-logo logo-green">
-<a href="/signage/" alt="IT" title="Universal Digital Signage"><img src="/assets/images/website/creative-idea-solution-icon.svg"></a>
-</span></div>
-
             <div class="access">
-
               <!-- Get the last 5 posts from lastmod list. -->
 
 
@@ -1274,13 +1115,14 @@
 
             </div>
             
+            
               
               
 
 
 
   <section id="toc-wrapper" class="ps-0 pe-4 mb-5">
-    <h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2>
+    <h2 class="panel-heading pt-2 mb-2 sizeup">Contents</h2>
     <nav id="toc"></nav>
   </section>
 
@@ -1288,7 +1130,7 @@
             
            </aside>
 
-        </div>
+          </div>
 
         <div class="row">
           <!-- tail -->

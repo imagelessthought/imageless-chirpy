@@ -74,6 +74,7 @@ h1 + .post-meta {
 
   .license-wrapper {
     line-height: 1.2rem;
+    color: var(--text-color);
 
     > a {
       @extend %text-highlight;
@@ -254,13 +255,14 @@ h1 + .post-meta {
 }
 
 #toc-wrapper {
-  border-left: 1px solid rgba(158, 158, 158, 0.17);
+  border-left: 1px solid var(--lnkbrd);
   position: -webkit-sticky;
   position: sticky;
-  top: 4rem;
+  top: 1.5rem;
   transition: top 0.2s ease-in-out;
   -webkit-animation: fade-up 0.8s;
   animation: fade-up 0.8s;
+  margin-bottom: 2rem!important;
 
   ul {
     list-style: none;
@@ -274,7 +276,7 @@ h1 + .post-meta {
       }
 
       a {
-        padding: 0.2rem 0 0.2rem 1.25rem;
+        padding: 0.2rem 0 0.2rem 1.75rem;
       }
     }
 
@@ -299,7 +301,7 @@ h1 + .post-meta {
     .is-active-link {
       color: var(--toc-highlight)!important;
       font-weight: 600;
-
+      
       &::before {
         display: inline-block;
         width: 1px;
