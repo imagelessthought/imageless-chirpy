@@ -27,3 +27,5 @@ This time around we will be adding some new features:
 
 [Project Documentation](/signage/ 'ITG: Universal Digital Signage'){: .iul}
 is availabe online as are our starting templates.
+
+<!-- {% download_link /certificates/certificate-Intro to Git.pdf %} -->

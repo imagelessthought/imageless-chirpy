@@ -4,8 +4,19 @@ source "https://rubygems.org"
 
 gemspec
 
-group :test do
+group :jekyll_plugins do
+  gem 'jekyll_pre'
+  gem 'jekyll-admin'
+  gem 'jekyll_outline'
+  gem 'jekyll_download_link'
+  gem 'jekyll-glossary_tooltip'
   gem "html-proofer", "~> 4.4"
+  gem "jekyll-include-cache", "= 0.2.1"
+  gem "jekyll-octicons", "~> 14.2"
+  gem 'jekyll-typogrify'
+  gem 'jekyll-redirect-from'
+  gem 'jekyll-target-blank'
+  gem 'jekyll-import'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -26,11 +37,7 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 if RUBY_PLATFORM =~ /linux-musl/
   gem "jekyll-sass-converter", "~> 2.0"
 end
+
 # Manage our dependency on the version of the github-pages gem here.
 #gem 'github-pages', group: :jekyll_plugins
 #gem "github-pages"
-
-gem "jekyll-include-cache", "= 0.2.1"
-gem "jekyll-octicons", "~> 14.2"
-gem 'jekyll-typogrify'
-gem 'jekyll-admin', group: :jekyll_plugins

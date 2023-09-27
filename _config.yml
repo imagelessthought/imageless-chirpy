@@ -209,10 +209,17 @@ gems:
 jekyll_admin:
   hidden_links:
 #   - posts
-    - pages
+#   - pages
 #   - staticfiles
 #   - datafiles
 #   - configuration
-  homepage: "pages"
+  homepage: "posts"
 
+plugins:
+  - jekyll-redirect-from
+  - jekyll-target-blank
+  - jekyll-glossary_tooltip
+
+whitelist:
+  - jekyll-redirect-from
   
