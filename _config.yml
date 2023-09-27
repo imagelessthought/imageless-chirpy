@@ -131,9 +131,9 @@ collections:
   tabs:
    output: true
    sort_by: order
-  articles:
-   output: true
-   permalink: /:collection/:path/
+#  articles:
+#   output: true
+#   permalink: /:collection/:path/
   pages:
    output: true
 defaults:
@@ -202,3 +202,17 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+gems:
+- jekyll-typogrify
+
+jekyll_admin:
+  hidden_links:
+#   - posts
+    - pages
+#   - staticfiles
+#   - datafiles
+#   - configuration
+  homepage: "pages"
+
+  
