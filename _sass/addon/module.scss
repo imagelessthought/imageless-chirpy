@@ -54,13 +54,13 @@
 }
 
 %link-hover {
-  color: rgb(138, 180, 248); 
+  color: rgb(138, 180, 248)!important; 
 /*  border-bottom: 0px solid #d2603a; */
   text-decoration: none;
 }
 
 %link-color {
-  color: var(--link-color);
+  color: var(--link-color)!important;
 }
 
 %link-underline {

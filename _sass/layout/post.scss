@@ -287,7 +287,7 @@ h1 + .post-meta {
       text-overflow: ellipsis;
 
       &:hover {
-        color: var(--prompt-danger-icon-color)!important;
+        color: var(--tag-hover)!important;
         text-decoration: none;
       }
 
