@@ -1,7 +1,7 @@
 /*
  * The syntax light mode typography colors
  */
-
+ 
 @mixin light-scheme {
 
   /* Added; MBaggett */
@@ -20,6 +20,7 @@
 
   --stdlink: #44611F;
   --stdhov: rgb(138, 180, 248);
+  --buttonbg: #C5E1A5;
   
   --lnkcolor: white;
   --lnkbrd: #C5E1A5;
