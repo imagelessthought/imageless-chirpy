@@ -508,6 +508,34 @@ Sitemap: http://localhost:4000/sitemap.xml
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/WSL2/">Windows Subsystem For Linux</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/Jekyll/">Jekyll: Static Webpages</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/Git/">Git for Everyone</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/AI/">AI: A Primer</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/Universal-Digital-Signage/">Universal Digital Signage</a>
         </li>
       
