@@ -1,7 +1,7 @@
 ---
 layout: page
 icon: fas fa-server
-order: 10
+order: 12
 ---
 [guacamole.unt.edu](http://guacamole.unt.edu/ 'Guacamole Portal')<br>[![guacamole.unt.edu](https://img.shields.io/website-up-down-green-red/http/guacamole.unt.edu.svg)](http://guacamole.unt.edu/)
 {: .flex-item-pad} 

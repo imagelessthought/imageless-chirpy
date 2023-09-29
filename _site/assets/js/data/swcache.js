@@ -13,19 +13,19 @@ const resource = [
   
     '/tabs/about.html',
   
-    '/tabs/resources.html',
-  
-    '/tabs/links.html',
-  
-    '/tabs/repositories.html',
-  
-    '/tabs/status-checks.html',
-  
     '/tabs/categories.html',
   
     '/tabs/tags.html',
   
     '/tabs/archives.html',
+  
+    '/tabs/repositories.html',
+  
+    '/tabs/status-checks.html',
+  
+    '/tabs/resources.html',
+  
+    '/tabs/links.html',
   
 
   /* --- Favicons & compressed JS --- */

@@ -1,6 +1,6 @@
 ---
 layout: page
 icon: fas fa-circle-info 
-order: 4
+order: 14
 ---
 {% include_cached resources.html %}

@@ -1,7 +1,7 @@
 ---
 layout: page
 icon: fas fa-timeline
-order: 8
+order: 10
 ---
 [github-readme-stats](https://github.com/anuraghazra/github-readme-stats 'Github Stats ReadMe Vercel App') allows you to insert a badge into a webpage that shows the activity of a repository or the contributions of a particular user on Github.
 
