@@ -1,15 +1,9 @@
 ---
 layout: page
 icon: fas fa-timeline
-order: 6
+order: 8
 ---
 [github-readme-stats](https://github.com/anuraghazra/github-readme-stats 'Github Stats ReadMe Vercel App') allows you to insert a badge into a webpage that shows the activity of a repository or the contributions of a particular user on Github.
-
-![notheme](https://github-readme-stats.vercel.app/api?username=anuraghazra&theme=none)
-
-![notheme](https://github-readme-stats.vercel.app/api/pin/?username=go-gitea&repo=gitea&show_icons=true&theme=none&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage)
-
-![notheme](https://github-readme-stats.vercel.app/api?username=fuziontech&theme=dark)
 
 ![dark](https://github-readme-stats.vercel.app/api/pin/?username=PostHog&repo=posthog&show_icons=true&theme=dark)
 
@@ -20,3 +14,13 @@ order: 6
 ![merko](https://github-readme-stats.vercel.app/api/pin/?username=AbdullahAlfaraj&repo=Auto-Photoshop-StableDiffusion-Plugin&include_all_commits=true&show_icons=true&theme=merko&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage)
 
 ![highc](https://github-readme-stats.vercel.app/api/pin/?username=divamgupta&repo=diffusionbee-stable-diffusion-ui&show_icons=true&theme=highcontrast)
+
+<!-- 
+
+![notheme](https://github-readme-stats.vercel.app/api?username=anuraghazra&theme=none)
+
+![notheme](https://github-readme-stats.vercel.app/api/pin/?username=go-gitea&repo=gitea&show_icons=true&theme=none&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage)
+
+![notheme](https://github-readme-stats.vercel.app/api?username=fuziontech&theme=dark)
+
+-->

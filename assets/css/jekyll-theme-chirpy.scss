@@ -162,16 +162,15 @@ b, strong {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 1rem 1rem;
+    gap: 1rem 0rem;
     width: 100%!important; /* Adjust the max-width as needed */
     max-width: 100%!important;
 }
-
+ 
 .flex-item {
-    width: 200px;
-    max-width: 200px;
+    max-width: 30%;
     height: auto;
-    margin: 1rem; /* Adjust the margin for spacing */
+    margin: 1rem 0; /* Adjust the margin for spacing */
     justify-content: center;
             background-color: var(--main-bg); /* Optional: Add a background color */
     border-radius: 4px;
@@ -179,10 +178,10 @@ b, strong {
   }
 
   .flex-item-pad {
-    width: 27.5%!important;
-    max-width: 27.5%!important;
+    width: 29%!important;
+    max-width: 29%!important;
     display: inline-block;
-    padding: .5rem 1rem 1rem 1rem!important;
+    padding: .5rem!important;
     margin: 1rem; /* Adjust the margin for spacing */
     justify-content: center;
     background-color:var(--flexbg); /* Optional: Add a background color */
@@ -226,8 +225,8 @@ b, strong {
   }
 
    .flex-item-links {
-    width: 40%;
-    max-width: 40%;
+    width: 47%;
+    max-width: 47%;
     height: auto;
     margin: 1rem .25rem;
     text-align: center;
@@ -248,9 +247,6 @@ b, strong {
   }
 
     .image-wrapper {
-      width: 200px;
-      height: 200px;
-      overflow: hidden;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -303,7 +299,7 @@ b, strong {
 
     .rsidebar-links a {
     display: block;
-    font-size: .8rem;
+    font-size: 1rem;
     text-decoration: none!important;
     text-align: left!important;
     border-top: .5px solid var(--lnkbrd)!important;

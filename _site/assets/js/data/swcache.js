@@ -13,13 +13,13 @@ const resource = [
   
     '/tabs/about.html',
   
-    '/tabs/status-checks.html',
-  
-    '/tabs/repositories.html',
-  
     '/tabs/resources.html',
   
     '/tabs/links.html',
+  
+    '/tabs/repositories.html',
+  
+    '/tabs/status-checks.html',
   
     '/tabs/categories.html',
   

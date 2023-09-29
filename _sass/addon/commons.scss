@@ -364,9 +364,10 @@ i {
     opacity: 0;
     transition: opacity 0.35s ease-in-out;
   }
-
+ 
   &:hover {
     &::before {
+      background-color: var(--tgbg);
       opacity: 0.3;
     }
   }

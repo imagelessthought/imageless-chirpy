@@ -1,7 +1,7 @@
 ---
 layout: page
 icon: fas fa-server
-order: 4
+order: 10
 ---
 [guacamole.unt.edu](http://guacamole.unt.edu/ 'Guacamole Portal')<br>[![guacamole.unt.edu](https://img.shields.io/website-up-down-green-red/http/guacamole.unt.edu.svg)](http://guacamole.unt.edu/)
 {: .flex-item-pad} 
@@ -13,9 +13,6 @@ order: 4
 {: .flex-item-pad}
 [booked scheduler](http://itservices.cvad.unt.edu/reservations/ 'Booked Scheduler')<br>[![itservices.cvad.unt.edu/reservations](https://img.shields.io/website-up-down-green-red/http/itservices.cvad.unt.edu/reservations.svg)](http://itservices.cvad.unt.edu/reservations)
 {: .flex-item-pad}
-
-
-
 
 <!--
 main-db.guacamole.unt.edu [![main-db.guacamole.unt.edu](https://img.shields.io/website-up-down-green-red/http/main-db.guacamole.unt.edu.svg)](http://main-db.guacamole.unt.edu/)
