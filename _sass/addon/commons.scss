@@ -496,7 +496,7 @@ main {
   ::marker {
     color: var(--text-muted-color);
   }
-} /* .content */
+} /* .content */ 
 
 .tag:hover {
   @extend %tag-hover;

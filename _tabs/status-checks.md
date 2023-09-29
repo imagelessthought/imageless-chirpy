@@ -14,7 +14,7 @@ order: 12
 [booked scheduler](http://itservices.cvad.unt.edu/reservations/ 'Booked Scheduler')<br>[![itservices.cvad.unt.edu/reservations](https://img.shields.io/website-up-down-green-red/http/itservices.cvad.unt.edu/reservations.svg)](http://itservices.cvad.unt.edu/reservations)
 {: .flex-item-pad}
 
-<!--
+<!-- 
 main-db.guacamole.unt.edu [![main-db.guacamole.unt.edu](https://img.shields.io/website-up-down-green-red/http/main-db.guacamole.unt.edu.svg)](http://main-db.guacamole.unt.edu/)
 {: .flex-item}
 -->

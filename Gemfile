@@ -4,20 +4,17 @@ source "https://rubygems.org"
 
 gemspec
 
+group :jekyll_plugins do
+  gem 'jekyll_download_link'
   gem 'jekyll_pre'
   gem 'jekyll_outline'
   gem 'jekyll-glossary_tooltip'
   gem "html-proofer", "~> 4.4"
-  gem "jekyll-include-cache", "= 0.2.1"
   gem "jekyll-octicons", "~> 14.2"
   gem 'jekyll-typogrify'
   gem 'jekyll-redirect-from'
   gem 'jekyll-target-blank'
   gem 'jekyll-import'
-
-group :jekyll_plugins do
-  gem 'jekyll-admin'
-  gem 'jekyll_download_link'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

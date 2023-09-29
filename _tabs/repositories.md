@@ -15,7 +15,7 @@ order: 10
 
 ![highc](https://github-readme-stats.vercel.app/api/pin/?username=divamgupta&repo=diffusionbee-stable-diffusion-ui&show_icons=true&theme=highcontrast)
 
-<!-- 
+<!--  
 
 ![notheme](https://github-readme-stats.vercel.app/api?username=anuraghazra&theme=none)
 
