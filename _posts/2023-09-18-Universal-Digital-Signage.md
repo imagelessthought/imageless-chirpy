@@ -6,6 +6,13 @@ categories: [Innovation]
 tags: [ITG] 
 pin: true
 search: include
+image:
+  path: /assets/images/posts/universal-sign.png
+  alt: Universal Digital Signage
+
+
+
+
 ---
 The signage solution we have in place has served us well but it is time for an update. The original open source developer of the solution has taken their poject project proprietary as well.
 
