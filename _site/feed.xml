@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Imageless Thought</title>
   <subtitle>Innovation-focused technology site.</subtitle>
-  <updated>2023-10-02T15:37:40-05:00</updated>
+  <updated>2023-10-02T15:53:13-05:00</updated>
   <author>
     <name>Michael Baggett</name>
     <uri>http://localhost:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/posts/Universal-Digital-Signage/" rel="alternate" type="text/html" title="Universal Digital Signage" />
     <published>2023-09-17T19:00:00-05:00</published>
   
-    <updated>2023-09-27T09:19:50-05:00</updated>
+    <updated>2023-10-02T15:38:20-05:00</updated>
   
     <id>http://localhost:4000/posts/Universal-Digital-Signage/</id>
     <content src="http://localhost:4000/posts/Universal-Digital-Signage/" />
@@ -46,13 +46,13 @@
 
 
 
-      The signage solution we have in place has served us well but it is time for an update. The original open source developer of the solution has taken their poject project proprietary as well.
+      The signage solution we have in place has served us well but it is time for an update. The original open source developer of the solution has taken their project proprietary as well.
 
 We will be developing the new solution as open source and will use already available code whenever possible: don’t reinvent the wheel.  Unless you have to, that is.
 
 New Features
 
-This time around we will b...
+This time around we will be addin...
     </summary>
   
 
@@ -64,7 +64,7 @@ This time around we will b...
     <link href="http://localhost:4000/posts/AI/" rel="alternate" type="text/html" title="AI: A Primer" />
     <published>2023-08-02T07:55:00-05:00</published>
   
-    <updated>2023-09-27T17:19:39-05:00</updated>
+    <updated>2023-10-02T15:38:20-05:00</updated>
   
     <id>http://localhost:4000/posts/AI/</id>
     <content src="http://localhost:4000/posts/AI/" />
@@ -100,7 +100,7 @@ Below are links to some glossaries and articles to further assist you wi...
     <link href="http://localhost:4000/posts/Git/" rel="alternate" type="text/html" title="Git for Everyone" />
     <published>2023-08-02T07:55:00-05:00</published>
   
-    <updated>2023-09-27T17:19:39-05:00</updated>
+    <updated>2023-10-02T15:38:20-05:00</updated>
   
     <id>http://localhost:4000/posts/Git/</id>
     <content src="http://localhost:4000/posts/Git/" />
@@ -134,7 +134,7 @@ Below are links to some glossaries and articles to further assist you wi...
     <link href="http://localhost:4000/posts/Jekyll/" rel="alternate" type="text/html" title="Jekyll: Static Webpages" />
     <published>2023-08-01T07:55:00-05:00</published>
   
-    <updated>2023-09-27T17:19:39-05:00</updated>
+    <updated>2023-10-02T15:38:20-05:00</updated>
   
     <id>http://localhost:4000/posts/Jekyll/</id>
     <content src="http://localhost:4000/posts/Jekyll/" />
@@ -168,7 +168,7 @@ Below are links to some glossaries and articles to further assist you wi...
     <link href="http://localhost:4000/posts/WSL2/" rel="alternate" type="text/html" title="Windows Subsystem For Linux" />
     <published>2023-07-30T07:55:00-05:00</published>
   
-    <updated>2023-09-27T17:19:39-05:00</updated>
+    <updated>2023-10-02T15:38:20-05:00</updated>
   
     <id>http://localhost:4000/posts/WSL2/</id>
     <content src="http://localhost:4000/posts/WSL2/" />
