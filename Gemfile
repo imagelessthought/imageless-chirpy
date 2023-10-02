@@ -36,6 +36,8 @@ if RUBY_PLATFORM =~ /linux-musl/
   gem "jekyll-sass-converter", "~> 2.0"
 end
 
+# gem 'pluto', '~> 1.3', '>= 1.3.4'
+
 # Manage our dependency on the version of the github-pages gem here.
 #gem 'github-pages', group: :jekyll_plugins
 #gem "github-pages"
