@@ -511,35 +511,7 @@ Sitemap: http://localhost:4000/sitemap.xml
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/WSL2/">Windows Subsystem For Linux</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
           <a href="/posts/Universal-Digital-Signage/">Universal Digital Signage</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/Jekyll/">Jekyll: Static Webpages</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/Git/">Git for Everyone</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/AI/">AI: A Primer</a>
         </li>
       
     </ul>
@@ -975,9 +947,6 @@ Sitemap: http://localhost:4000/sitemap.xml
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/ai/">AI</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/git/">Git</a>
       
         
@@ -1003,6 +972,9 @@ Sitemap: http://localhost:4000/sitemap.xml
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/wsl2/">WSL2</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/wsl/">WSL</a>
       
     </div>
   </section>
@@ -1483,9 +1455,6 @@ Sitemap: http://localhost:4000/sitemap.xml
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/ai/">AI</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/git/">Git</a>
       
         
@@ -1511,6 +1480,9 @@ Sitemap: http://localhost:4000/sitemap.xml
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/wsl2/">WSL2</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/wsl/">WSL</a>
       
     </div>
   </section>

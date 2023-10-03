@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Imageless Thought</title>
   <subtitle>Innovation-focused technology site.</subtitle>
-  <updated>2023-10-03T11:55:48-05:00</updated>
+  <updated>2023-10-03T16:51:14-05:00</updated>
   <author>
     <name>Michael Baggett</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,108 @@
   <icon>/assets/images/favicons/favicon.ico</icon>
   <logo>/assets/images/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Jekyll: Static Webpages</title>
+    <link href="http://localhost:4000/posts/Jekyll/" rel="alternate" type="text/html" title="Jekyll: Static Webpages" />
+    <published>2023-10-03T07:55:00-05:00</published>
+  
+    <updated>2023-10-03T07:55:00-05:00</updated>
+  
+    <id>http://localhost:4000/posts/Jekyll/</id>
+    <content src="http://localhost:4000/posts/Jekyll/" />
+    <author>
+      <name>mbaggett</name>
+    </author>
+
+  
+    
+    <category term="Application" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Jekyll is a free and open source static site generator that was developed by Github and is written in the Ruby Programming Lanaguage. It takes text written in Markdown, Liquid, HTML &amp;amp; CSS and uses standardized layouts to create static webpages. SASS: Syntactically Awesome Style Sheets integration is bulit-in. You can easily customize the look and feel, URLs, and the data displayed on your p...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Git for Everyone</title>
+    <link href="http://localhost:4000/posts/Git/" rel="alternate" type="text/html" title="Git for Everyone" />
+    <published>2023-10-02T07:55:00-05:00</published>
+  
+    <updated>2023-10-02T07:55:00-05:00</updated>
+  
+    <id>http://localhost:4000/posts/Git/</id>
+    <content src="http://localhost:4000/posts/Git/" />
+    <author>
+      <name>mbaggett</name>
+    </author>
+
+  
+    
+    <category term="Application" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Git has been around since 2005 and is widely used for collaborative software development.  But it has wider uses.  As examples it is used by writers and artists to track changes as it keeps a complete history and changes can be rolled back t...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Windows Subsystem For Linux</title>
+    <link href="http://localhost:4000/posts/WSL2/" rel="alternate" type="text/html" title="Windows Subsystem For Linux" />
+    <published>2023-10-01T07:55:00-05:00</published>
+  
+    <updated>2023-10-01T07:55:00-05:00</updated>
+  
+    <id>http://localhost:4000/posts/WSL2/</id>
+    <content src="http://localhost:4000/posts/WSL2/" />
+    <author>
+      <name>mbaggett</name>
+    </author>
+
+  
+    
+    <category term="Introduction" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Over the past two years years Microsoft has made some significant improvements to the Windows Subsystem for Linux. The Windows Subsystem for Linux (WSL) is a feature of the Windows operating system that enables you to run a Linux file system, along with Linux command-line tools and GUI apps, directly on Windows, alongside your traditional Windows desktop and apps. WSL 2 is a new version of the ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -53,144 +155,6 @@ We will be developing the new solution as open source and will use already avail
 New Features
 
 This time around we will be addin...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>AI: A Primer</title>
-    <link href="http://localhost:4000/posts/AI/" rel="alternate" type="text/html" title="AI: A Primer" />
-    <published>2023-08-02T07:55:00-05:00</published>
-  
-    <updated>2023-10-02T15:38:20-05:00</updated>
-  
-    <id>http://localhost:4000/posts/AI/</id>
-    <content src="http://localhost:4000/posts/AI/" />
-    <author>
-      <name>mbaggett</name>
-    </author>
-
-  
-    
-    <category term="Get Started" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      The AI field is heavy with jargon and terminology.  To help you navigate and understand the the technologies and solutions that are out there, you will need a some help. I suggest starting by reading this article: Artificial Intelligence Glossary: Neural Networks and Other Terms Explained - New York Times; March 23, 2023.
-
-Below are links to some glossaries and articles to further assist you wi...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Git for Everyone</title>
-    <link href="http://localhost:4000/posts/Git/" rel="alternate" type="text/html" title="Git for Everyone" />
-    <published>2023-08-02T07:55:00-05:00</published>
-  
-    <updated>2023-10-02T15:38:20-05:00</updated>
-  
-    <id>http://localhost:4000/posts/Git/</id>
-    <content src="http://localhost:4000/posts/Git/" />
-    <author>
-      <name>mbaggett</name>
-    </author>
-
-  
-    
-    <category term="Application" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Git has been around since 2005 and is widely used for collaborative software development.  But it has wider uses.  As examples it is used by writers and artists to track changes as it keeps a complete history and changes can be rolled back t...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Jekyll: Static Webpages</title>
-    <link href="http://localhost:4000/posts/Jekyll/" rel="alternate" type="text/html" title="Jekyll: Static Webpages" />
-    <published>2023-08-01T07:55:00-05:00</published>
-  
-    <updated>2023-10-02T15:38:20-05:00</updated>
-  
-    <id>http://localhost:4000/posts/Jekyll/</id>
-    <content src="http://localhost:4000/posts/Jekyll/" />
-    <author>
-      <name>mbaggett</name>
-    </author>
-
-  
-    
-    <category term="Application" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Jekyll is a free and open source static site generator that was developed by Github and is written in the Ruby Programming Lanaguage. It takes text written in Markdown, Liquid, HTML &amp;amp; CSS and uses standardized layouts to create static webpages. SASS: Syntactically Awesome Style Sheets integration is bulit-in. You can easily customize the look and feel, URLs, and the data displayed on your p...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Windows Subsystem For Linux</title>
-    <link href="http://localhost:4000/posts/WSL2/" rel="alternate" type="text/html" title="Windows Subsystem For Linux" />
-    <published>2023-07-30T07:55:00-05:00</published>
-  
-    <updated>2023-10-02T15:53:50-05:00</updated>
-  
-    <id>http://localhost:4000/posts/WSL2/</id>
-    <content src="http://localhost:4000/posts/WSL2/" />
-    <author>
-      <name>mbaggett</name>
-    </author>
-
-  
-    
-    <category term="Introduction" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Over the past two years years Microsoft has made some significant improvements to the Windows Subsystem for Linux. The Windows Subsystem for Linux (WSL) is a feature of the Windows operating system that enables you to run a Linux file system, along with Linux command-line tools and GUI apps, directly on Windows, alongside your traditional Windows desktop and apps. WSL 2 is a new version of the ...
     </summary>
   
 
