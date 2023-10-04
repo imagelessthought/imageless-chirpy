@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Imageless Thought</title>
   <subtitle>Innovation-focused technology site.</subtitle>
-  <updated>2023-10-03T16:51:14-05:00</updated>
+  <updated>2023-10-04T17:22:17-05:00</updated>
   <author>
     <name>Michael Baggett</name>
     <uri>http://localhost:4000/</uri>
@@ -126,7 +126,7 @@
     <link href="http://localhost:4000/posts/Universal-Digital-Signage/" rel="alternate" type="text/html" title="Universal Digital Signage" />
     <published>2023-09-17T19:00:00-05:00</published>
   
-    <updated>2023-10-02T15:53:50-05:00</updated>
+    <updated>2023-10-03T16:51:48-05:00</updated>
   
     <id>http://localhost:4000/posts/Universal-Digital-Signage/</id>
     <content src="http://localhost:4000/posts/Universal-Digital-Signage/" />

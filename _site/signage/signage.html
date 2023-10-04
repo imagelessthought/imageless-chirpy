@@ -40,20 +40,20 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Security Policy" />
-<meta name="author" content="sysop" />
+<meta property="og:title" content="Digital Signage Example" />
+<meta name="author" content="Michael Baggett" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Security Policy" />
-<meta property="og:description" content="Security Policy" />
-<link rel="canonical" href="http://localhost:4000/pages/security.html" />
-<meta property="og:url" content="http://localhost:4000/pages/security.html" />
+<meta name="description" content="Innovation-focused technology site." />
+<meta property="og:description" content="Innovation-focused technology site." />
+<link rel="canonical" href="http://localhost:4000/signage/signage.html" />
+<meta property="og:url" content="http://localhost:4000/signage/signage.html" />
 <meta property="og:site_name" content="Imageless Thought" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-10-04T17:22:17-05:00" />
+<meta property="article:published_time" content="2023-10-03T19:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Security Policy" />
+<meta property="twitter:title" content="Digital Signage Example" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"sysop"},"dateModified":"2023-10-04T17:22:17-05:00","datePublished":"2023-10-04T17:22:17-05:00","description":"Security Policy","headline":"Security Policy","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/pages/security.html"},"url":"http://localhost:4000/pages/security.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Michael Baggett","url":"https://github.com/imagelessthought/"},"dateModified":"2023-10-03T19:00:00-05:00","datePublished":"2023-10-03T19:00:00-05:00","description":"Innovation-focused technology site.","headline":"Digital Signage Example","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/signage/signage.html"},"url":"http://localhost:4000/signage/signage.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -112,9 +112,6 @@
   
 
   
-    <!-- Manific Popup -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css">
-  
 
   <!-- JavaScript -->
 
@@ -126,7 +123,8 @@
 
 
   <body>
-    <!-- The Side Bar -->
+    <body>
+<!-- The Side Bar -->
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
   <header class="profile-wrapper">
     <a href="/" id="avatar" class="rounded-circle">
@@ -245,7 +243,7 @@
       
 
       
-        <a href="https://github.com/imagelessthought" aria-label="github" target="_blank" rel="noopener noreferrer noopener noreferrer noopener noreferrer">
+        <a href="https://github.com/imagelessthought" aria-label="github" target="_blank" rel="noopener noreferrer noopener noreferrer">
           <i class="fab fa-github"></i>
         </a>
       
@@ -253,7 +251,7 @@
       
 
       
-        <a href="https://www.linkedin.com/in/baggettmichael" aria-label="linkedin" target="_blank" rel="noopener noreferrer noopener noreferrer noopener noreferrer">
+        <a href="https://www.linkedin.com/in/baggettmichael" aria-label="linkedin" target="_blank" rel="noopener noreferrer noopener noreferrer">
           <i class="fa-brands fa-linkedin"></i>
         </a>
       
@@ -306,7 +304,7 @@
         
           
             
-              <span>Security Policy</span>
+              <span>Digital Signage Example</span>
             
 
           
@@ -322,7 +320,7 @@
     </button>
 
     <div id="topbar-title">
-      Security Policy
+      Default
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link">
@@ -340,153 +338,147 @@
 
         <div class="row">
           <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4 pb-5">
-            
-
-<article class="px-1">
-  
-    
-    
-    <h1 class="dynamic-title">
-      Security Policy
-    </h1>
-    <div class="content">
-      
-  
-    <!-- Refactor the HTML structure -->
-
-
-
-<!--
-  In order to allow a wide table to scroll horizontally,
-  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
--->
-
-
-
-<!--
-  Fixed kramdown code highlight rendering:
-  https://github.com/penibelst/jekyll-compress-html/issues/101
-  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
--->
-
-
-
-<!-- Change the icon of checkbox -->
-
-
-<!-- images -->
-
-
-
-
-<!-- Add header for code snippets -->
-
-
-
-<!-- Create heading anchors -->
-
-
-
-
-
-  
-  
-
-  
-    
-    
-
-    
-      
+            <h2 id="include-a-kiosk-in-iframe">Include a Kiosk in iframe</h2>
+<style>
+                body {
+                    margin: 0;
+                    padding: 0;
+                    font-family: Arial, sans-serif;
+                }
         
+                .flex-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 1rem;
+                    max-width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: auto; margin-right: auto;
+                    text-align: center;
+                    overflow: hidden; /* Hide scroll bars for the entire container */
+                }
         
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
-
-    
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
+                .flex-item {
+                    flex-basis: calc(33.3333% - 3rem); /* 1/3 of available width with padding */
+                    margin: 1rem;
+                    box-sizing: border-box;
+                    overflow: hidden;
+                }
+        
+                .iframe-container {
+                    position: relative;
+                    padding-top: 56.25%; /* 16:9 aspect ratio */
+                    max-width: 100%;
+                }
+        
+                iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    max-width: 100%;
+                    max-height: 100%;
+                    border: none;
+                    overflow: hidden; /* Hide scroll bars */
+                }   
+</style>
 
 
-
-
-<!-- return -->
-<h1 id="security-policy">Security Policy</h1>
-
-<h2 id="supported-versions">
-<span class="me-2">Supported Versions</span><a href="#supported-versions" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
-</h2>
-
-<div class="table-wrapper"><table>
-  <thead>
-    <tr>
-      <th style="text-align: left">Version</th>
-      <th style="text-align: center">Supported</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">6.x</code></td>
-      <td style="text-align: center">✓</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">&lt; <code class="language-plaintext highlighter-rouge">6.0.0</code>
-</td>
-      <td style="text-align: center">✗</td>
-    </tr>
-  </tbody>
-</table></div>
-
-<h2 id="reporting-a-vulnerability">
-<span class="me-2">Reporting a Vulnerability</span><a href="#reporting-a-vulnerability" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
-</h2>
-
-<p>If you find a vulnerability, please report it to <code class="language-plaintext highlighter-rouge">cotes.chung@gmail.com</code>.
-We will try our best to respond within a week. Thank you for your time!</p>
-
-
-  
-
+    <div class="flex-container">
+        <div class="flex-item">
+            <a href="/signage/templates/embed-signage.html" class="target">View Display</a>
+            <div class="iframe-container">
+                <iframe src="/signage/templates/embed-signage.html" frameborder="0"></iframe>
+            </div>
+        </div>
+        <div class="flex-item">
+            <a href="/signage/templates/embed-kiosk.html" class="target">View Display</a>
+            <div class="iframe-container">
+                <iframe src="/signage/templates/embed-kiosk.html" frameborder="0"></iframe>
+            </div>
+        </div>
+        <div class="flex-item">
+            <a href="/signage/templates/embed-presentation.html" class="target">View Display</a>
+            <div class="iframe-container">
+                <iframe src="/signage/templates/embed-presentation.html" frameborder="0"></iframe>
+            </div>
+        </div>
+        <!-- Add more flex-items as needed -->
     </div>
-  
-</article>
+
+<script>
+// Get all elements with the class "target"
+const targets = document.querySelectorAll('.target');
+
+// Loop through each element and add a click event listener
+targets.forEach(target => {
+    target.addEventListener('click', (e) => {
+        e.preventDefault();
+        const anchor = e.currentTarget;
+        const href = anchor.getAttribute('href');
+        window.open(href, '_blank', 'width=960, height=541');
+    });
+});
+</script>
+
+<!-- 
+Working:
+
+<script>
+// Get all elements with the class "target"
+const targets = document.querySelectorAll('.target');
+
+// Loop through each element and add a click event listener
+targets.forEach(target => {
+    target.addEventListener('click', (e) => {
+        e.preventDefault();
+        const anchor = e.currentTarget;
+        const href = anchor.getAttribute('href');
+        window.open(href, '_blank', 'width=960, height=541');
+    });
+});
+</script>
+
+Windowed:
+    <script>
+        const target = document.getElementById('target');
+        target.addEventListener('click', (e) => {
+          e.preventDefault(); // Prevent the link from navigating to another page
+      
+          const anchor = e.currentTarget;
+          const href = anchor.getAttribute('href'); // Get the URL from the anchor's href attribute
+      
+          // Open the URL in a new browser window
+          window.open(href, '_blank', 'width=960, height=541'); // You can customize the window size as needed
+        });
+      </script>
+
+Everything but the new window:
+    <script>
+        const target = document.getElementById('target');
+        target.addEventListener('click', (e) => {
+          e.preventDefault(); // Prevent the link from navigating to another page
+      
+          const anchor = e.currentTarget;
+          const href = anchor.getAttribute('href'); // Get the URL from the anchor's href attribute
+      
+          const iframe = document.createElement('iframe');
+          iframe.src = href; // Set the iframe's src to the extracted URL
+          iframe.style.width = "100%";
+          iframe.style.height = "100%";
+          document.body.appendChild(iframe);
+          iframe.requestFullscreen().catch((error) => {
+            console.error('Error attempting to enable fullscreen:', error);
+          });
+        });
+      </script>
+
+-->
+</main>
+</div>
+</div>
+</div>
+</body></body>
+
           </main>
 
           <!-- panel -->
@@ -1007,9 +999,13 @@ We will try our best to respond within a week. Thank you for your time!</p>
   <p>
     ©
     <time>2023</time>
-    <a href="https://github.com/imagelessthought" target="_blank" rel="noopener noreferrer noopener noreferrer">Michael Baggett</a>.
+    <a href="https://github.com/imagelessthought">Michael Baggett</a>.
     
-      <span data-bs-toggle="tooltip" data-bs-placement="top" title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">Some rights reserved.</span>
+      <span
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author."
+      >Some rights reserved.</span>
     
   </p>
 
@@ -1505,9 +1501,22 @@ We will try our best to respond within a week. Thank you for your time!</p>
     <div id="mask"></div>
 
     
-      <aside id="notification" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-animation="true" data-bs-autohide="false">
+      <aside
+  id="notification"
+  class="toast"
+  role="alert"
+  aria-live="assertive"
+  aria-atomic="true"
+  data-bs-animation="true"
+  data-bs-autohide="false"
+>
   <div class="toast-header">
-    <button type="button" class="btn-close ms-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    <button
+      type="button"
+      class="btn-close ms-auto"
+      data-bs-dismiss="toast"
+      aria-label="Close"
+    ></button>
   </div>
   <div class="toast-body text-center pt-0">
     <p class="px-2 mb-3">A new version of content is available.</p>
@@ -1530,13 +1539,6 @@ We will try our best to respond within a week. Thank you for your time!</p>
 <!-- layout specified -->
 
 
-  
-
-  
-    <!-- image lazy-loading & popup & clipboard -->
-    
-  
-
 
 
 
@@ -1572,44 +1574,16 @@ We will try our best to respond within a week. Thank you for your time!</p>
 
   
 
-  
-    
-
-    
-
-  
-
-  
-    
-
-    
-
-  
-
-  
-    
-
-    
-
-  
-
-  
-    
-
-    
-
-  
 
 
-
-  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/lazysizes@5.3.2/lazysizes.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/tocbot@4.21.1/dist/tocbot.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script>
 
 
 
 
 
 
-<script defer src="/assets/js/dist/page.min.js"></script>
+<script defer src="/assets/js/dist/commons.min.js"></script>
 
 
 
