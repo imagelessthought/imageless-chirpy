@@ -77,7 +77,7 @@ theme_mode: dark
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/jekyll/assets/images/favicons/tech-icon.svg"
+avatar: "/main/assets/images/favicons/tech-icon.svg"
 
 # boolean type, the global switch for TOC in posts.
 toc: true

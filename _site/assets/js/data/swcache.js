@@ -1,42 +1,42 @@
 const resource = [
   /* --- CSS --- */
-  '/jekyll/assets/css/jekyll-theme-chirpy.css',
+  '/main/assets/css/jekyll-theme-chirpy.css',
 
   /* --- PWA --- */
-  '/jekyll/app.js',
-  '/jekyll/sw.js',
+  '/main/app.js',
+  '/main/sw.js',
 
   /* --- HTML --- */
-  '/jekyll/index.html',
-  '/jekyll/404.html',
+  '/main/index.html',
+  '/main/404.html',
 
   
-    '/jekyll/tabs/about.html',
+    '/main/tabs/about.html',
   
-    '/jekyll/tabs/categories.html',
+    '/main/tabs/categories.html',
   
-    '/jekyll/tabs/tags.html',
+    '/main/tabs/tags.html',
   
-    '/jekyll/tabs/archives.html',
+    '/main/tabs/archives.html',
   
-    '/jekyll/tabs/repositories.html',
+    '/main/tabs/repositories.html',
   
-    '/jekyll/tabs/status-checks.html',
+    '/main/tabs/status-checks.html',
   
-    '/jekyll/tabs/resources.html',
+    '/main/tabs/resources.html',
   
-    '/jekyll/tabs/links.html',
+    '/main/tabs/links.html',
   
 
   /* --- Favicons & compressed JS --- */
   
   
-    '/jekyll/assets/js/dist/categories.min.js',
-    '/jekyll/assets/js/dist/commons.min.js',
-    '/jekyll/assets/js/dist/home.min.js',
-    '/jekyll/assets/js/dist/misc.min.js',
-    '/jekyll/assets/js/dist/page.min.js',
-    '/jekyll/assets/js/dist/post.min.js'
+    '/main/assets/js/dist/categories.min.js',
+    '/main/assets/js/dist/commons.min.js',
+    '/main/assets/js/dist/home.min.js',
+    '/main/assets/js/dist/misc.min.js',
+    '/main/assets/js/dist/page.min.js',
+    '/main/assets/js/dist/post.min.js'
 ];
 
 /* The request url with below domain will be cached */
