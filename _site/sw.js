@@ -1,6 +1,6 @@
 self.importScripts('/jekyll/assets/js/data/swcache.js');
 
-const cacheName = 'chirpy-20231120.094938';
+const cacheName = 'chirpy-20231120.110723';
 
 function verifyDomain(url) {
   for (const domain of allowedDomains) {
