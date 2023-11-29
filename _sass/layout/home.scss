@@ -13,7 +13,8 @@
     }
 
     &:not(:last-child) {
-      margin-bottom: 1.25rem;
+      margin: .5rem auto;
+      vertical-align: middle;
     }
   }
 
@@ -24,15 +25,18 @@
  
     .preview-img {
       height: 10rem;
+    /* height: 10rem; */
+    /* height: fit-content; */
+
 
       @extend %img-radius;
 
       img {
         width: 100%;
         height: 100%;
-        padding: .5rem 0;
+        vertical-align: middle;
         -o-object-fit: cover;
-        object-fit: cover;
+        object-fit: contain;
 
         @extend %img-radius;
       }
