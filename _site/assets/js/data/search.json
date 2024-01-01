@@ -2,7 +2,7 @@
   
   {
     "title": "AI: A Primer",
-    "url": "/main/posts/AI/",
+    "url": "/technical/posts/AI/",
     "categories": "Get Started",
     "tags": "AI",
     "date": "2023-10-10 07:55:00 -0500",
@@ -19,7 +19,7 @@
   
   {
     "title": "Jekyll: Static Webpages",
-    "url": "/main/posts/Jekyll/",
+    "url": "/technical/posts/Jekyll/",
     "categories": "Application",
     "tags": "Jekyll, Web, Web Design",
     "date": "2023-10-03 07:55:00 -0500",
@@ -36,7 +36,7 @@
   
   {
     "title": "Git for Everyone",
-    "url": "/main/posts/Git/",
+    "url": "/technical/posts/Git/",
     "categories": "Application",
     "tags": "Git, Github",
     "date": "2023-10-02 07:55:00 -0500",
@@ -53,7 +53,7 @@
   
   {
     "title": "Windows Subsystem For Linux",
-    "url": "/main/posts/WSL2/",
+    "url": "/technical/posts/WSL2/",
     "categories": "Introduction",
     "tags": "Linux, WSL, WSL2, Windows",
     "date": "2023-10-01 07:55:00 -0500",
@@ -70,7 +70,7 @@
   
   {
     "title": "Universal Digital Signage",
-    "url": "/main/posts/Universal-Digital-Signage/",
+    "url": "/technical/posts/Universal-Digital-Signage/",
     "categories": "Innovation",
     "tags": "ITG",
     "date": "2023-09-17 19:00:00 -0500",

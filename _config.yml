@@ -5,7 +5,7 @@ theme: jekyll-theme-chirpy
 
 # Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
 # and doesn't have a custom domain.
-baseurl: "/main/"
+baseurl: "/technical/"
 
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
@@ -25,7 +25,7 @@ tagline: innovate &#x26AC build &#x26AC repeat  # it will display as the sub-tit
 description: Innovation-focused technology site.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: "http://127.0.0.1:4000/"
+url: "http://127.0.0.1:4000/technical"
 
 github:
   username: imagelessthought
@@ -77,7 +77,7 @@ theme_mode: dark
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/main/assets/images/favicons/tech-icon.svg"
+avatar: "/technical/assets/images/favicons/tech-icon.svg"
 
 # boolean type, the global switch for TOC in posts.
 toc: true

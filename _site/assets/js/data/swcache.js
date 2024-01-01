@@ -1,42 +1,42 @@
 const resource = [
   /* --- CSS --- */
-  '/main/assets/css/jekyll-theme-chirpy.css',
+  '/technical/assets/css/jekyll-theme-chirpy.css',
 
   /* --- PWA --- */
-  '/main/app.js',
-  '/main/sw.js',
+  '/technical/app.js',
+  '/technical/sw.js',
 
   /* --- HTML --- */
-  '/main/index.html',
-  '/main/404.html',
+  '/technical/index.html',
+  '/technical/404.html',
 
   
-    '/main/tabs/about.html',
+    '/technical/tabs/about.html',
   
-    '/main/tabs/categories.html',
+    '/technical/tabs/categories.html',
   
-    '/main/tabs/tags.html',
+    '/technical/tabs/tags.html',
   
-    '/main/tabs/archives.html',
+    '/technical/tabs/archives.html',
   
-    '/main/tabs/repositories.html',
+    '/technical/tabs/repositories.html',
   
-    '/main/tabs/status-checks.html',
+    '/technical/tabs/status-checks.html',
   
-    '/main/tabs/resources.html',
+    '/technical/tabs/resources.html',
   
-    '/main/tabs/links.html',
+    '/technical/tabs/links.html',
   
 
   /* --- Favicons & compressed JS --- */
   
   
-    '/main/assets/js/dist/categories.min.js',
-    '/main/assets/js/dist/commons.min.js',
-    '/main/assets/js/dist/home.min.js',
-    '/main/assets/js/dist/misc.min.js',
-    '/main/assets/js/dist/page.min.js',
-    '/main/assets/js/dist/post.min.js'
+    '/technical/assets/js/dist/categories.min.js',
+    '/technical/assets/js/dist/commons.min.js',
+    '/technical/assets/js/dist/home.min.js',
+    '/technical/assets/js/dist/misc.min.js',
+    '/technical/assets/js/dist/page.min.js',
+    '/technical/assets/js/dist/post.min.js'
 ];
 
 /* The request url with below domain will be cached */
